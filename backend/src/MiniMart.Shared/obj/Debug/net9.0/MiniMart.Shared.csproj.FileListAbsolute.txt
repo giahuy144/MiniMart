@@ -1,0 +1,11 @@
+d:\SOA\MiniMart\backend\src\MiniMart.Shared\bin\Debug\net9.0\MiniMart.Shared.deps.json
+d:\SOA\MiniMart\backend\src\MiniMart.Shared\bin\Debug\net9.0\MiniMart.Shared.dll
+d:\SOA\MiniMart\backend\src\MiniMart.Shared\bin\Debug\net9.0\MiniMart.Shared.pdb
+d:\SOA\MiniMart\backend\src\MiniMart.Shared\obj\Debug\net9.0\MiniMart.Shared.GeneratedMSBuildEditorConfig.editorconfig
+d:\SOA\MiniMart\backend\src\MiniMart.Shared\obj\Debug\net9.0\MiniMart.Shared.AssemblyInfoInputs.cache
+d:\SOA\MiniMart\backend\src\MiniMart.Shared\obj\Debug\net9.0\MiniMart.Shared.AssemblyInfo.cs
+d:\SOA\MiniMart\backend\src\MiniMart.Shared\obj\Debug\net9.0\MiniMart.Shared.csproj.CoreCompileInputs.cache
+d:\SOA\MiniMart\backend\src\MiniMart.Shared\obj\Debug\net9.0\MiniMart.Shared.dll
+d:\SOA\MiniMart\backend\src\MiniMart.Shared\obj\Debug\net9.0\refint\MiniMart.Shared.dll
+d:\SOA\MiniMart\backend\src\MiniMart.Shared\obj\Debug\net9.0\MiniMart.Shared.pdb
+d:\SOA\MiniMart\backend\src\MiniMart.Shared\obj\Debug\net9.0\ref\MiniMart.Shared.dll
