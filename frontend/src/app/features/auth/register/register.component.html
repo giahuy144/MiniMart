@@ -1,0 +1,114 @@
+<div class="auth-page">
+  <div class="auth-card">
+    <div class="auth-header">
+      <div class="brand-badge">M</div>
+      <h2 class="auth-title">Đăng Ký Tài Khoản Khách Hàng</h2>
+      <p class="auth-subtitle">Trở thành thành viên MiniMart để tích điểm & nhận ưu đãi</p>
+    </div>
+
+    <div class="info-alert">
+      <span class="alert-icon">ℹ️</span>
+      <span class="alert-text">Đăng ký công khai mặc định cấp quyền <b>Customer</b>. Dùng để nhận đơn tại quầy & tích điểm.</span>
+    </div>
+
+    <!-- Thông báo thành công -->
+    @if (successMsg()) {
+      <div class="alert alert-success">{{ successMsg() }}</div>
+    }
+
+    <!-- Thông báo lỗi -->
+    @if (errorMsg()) {
+      <div class="alert alert-error">⚠️ {{ errorMsg() }}</div>
+    }
+
+    <form class="auth-form" (ngSubmit)="onSubmit()" #regForm="ngForm">
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Họ và tên *</label>
+          <input
+            type="text"
+            class="form-input"
+            placeholder="Ví dụ: Phan Nguyễn Gia Huy"
+            [(ngModel)]="form.fullName"
+            name="fullName"
+            required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Tên đăng nhập *</label>
+          <input
+            type="text"
+            class="form-input"
+            placeholder="Ví dụ: giahuy2026"
+            [(ngModel)]="form.username"
+            name="username"
+            required />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Địa chỉ Email *</label>
+          <input
+            type="email"
+            class="form-input"
+            placeholder="customer@gmail.com"
+            [(ngModel)]="form.email"
+            name="email"
+            required />
+        </div>
+        <div class="form-group">
+          <label class="form-label">Số điện thoại *</label>
+          <input
+            type="tel"
+            class="form-input"
+            placeholder="0912.345.678"
+            [(ngModel)]="form.phoneNumber"
+            name="phoneNumber"
+            required />
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label class="form-label">Mật khẩu * (tối thiểu 6 ký tự)</label>
+          <div class="input-wrap">
+            <input
+              [type]="showPwd() ? 'text' : 'password'"
+              class="form-input"
+              placeholder="Nhập mật khẩu"
+              [(ngModel)]="form.password"
+              name="password"
+              required />
+            <span class="toggle-pwd" (click)="togglePwd()">
+              {{ showPwd() ? '🙈' : '👁️' }}
+            </span>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Xác nhận mật khẩu *</label>
+          <input
+            type="password"
+            class="form-input"
+            placeholder="Nhập lại mật khẩu"
+            [(ngModel)]="form.confirmPassword"
+            name="confirmPassword"
+            required />
+        </div>
+      </div>
+
+      <button type="submit" class="btn-submit" [disabled]="isLoading()">
+        @if (isLoading()) {
+          <span>⏳ Đang tạo tài khoản...</span>
+        } @else {
+          <span>HOÀN TẤT ĐĂNG KÝ THÀNH VIÊN</span>
+        }
+      </button>
+
+      <div class="auth-footer">
+        <span>Đã có tài khoản? </span>
+        <a routerLink="/login" class="switch-link">Đăng nhập ngay</a>
+      </div>
+    </form>
+  </div>
+</div>

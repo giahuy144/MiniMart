@@ -1,0 +1,113 @@
+.app-root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .app-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0f172a;
+    padding: 12px 28px;
+    border-bottom: 1px solid #1e293b;
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      .logo-circle {
+        width: 36px;
+        height: 36px;
+        background: linear-gradient(135deg, #10b981, #047857);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #ffffff;
+        font-weight: 800;
+        font-size: 18px;
+      }
+
+      .app-titles {
+        display: flex;
+        flex-direction: column;
+
+        .app-name {
+          color: #ffffff;
+          font-weight: 800;
+          font-size: 16px;
+          letter-spacing: -0.5px;
+        }
+
+        .app-sub {
+          color: #94a3b8;
+          font-size: 11px;
+        }
+      }
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 6px;
+      background: #1e293b;
+      padding: 4px;
+      border-radius: 10px;
+
+      .nav-item {
+        padding: 8px 16px;
+        border-radius: 6px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #94a3b8;
+        transition: all 0.2s ease;
+
+        &.active, &:hover {
+          background: #10b981;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .nav-user {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+
+      .auth-btn {
+        padding: 8px 16px;
+        border-radius: 8px;
+        font-size: 13px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &.btn-login {
+          background: transparent;
+          color: #cbd5e1;
+          border: 1px solid #475569;
+
+          &.active, &:hover {
+            color: #ffffff;
+            border-color: #10b981;
+          }
+        }
+
+        &.btn-register {
+          background: #10b981;
+          color: #ffffff;
+          border: 1px solid #10b981;
+
+          &:hover {
+            background: #047857;
+          }
+        }
+      }
+    }
+  }
+
+  .app-content {
+    flex: 1;
+    background: #f8fafc;
+  }
+}

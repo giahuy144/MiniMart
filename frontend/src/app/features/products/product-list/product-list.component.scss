@@ -1,0 +1,180 @@
+.product-page {
+  padding: 24px;
+  max-width: 1300px;
+  margin: 0 auto;
+
+  .catalog-header {
+    margin-bottom: 24px;
+
+    .search-container {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 16px;
+
+      .search-input {
+        flex: 1;
+        padding: 12px 16px;
+        border-radius: 10px;
+        border: 1px solid #cbd5e1;
+        font-size: 14px;
+        outline: none;
+        &:focus {
+          border-color: #10b981;
+          box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
+        }
+      }
+
+      .btn-filter {
+        padding: 12px 20px;
+        background: #ffffff;
+        border: 1px solid #cbd5e1;
+        border-radius: 10px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+
+    .category-pills {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding-bottom: 4px;
+
+      .pill {
+        padding: 8px 16px;
+        background: #ffffff;
+        border: 1px solid #e2e8f0;
+        border-radius: 20px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #475569;
+        cursor: pointer;
+        white-space: nowrap;
+
+        &.active, &:hover {
+          background: #10b981;
+          color: #ffffff;
+          border-color: #10b981;
+        }
+      }
+    }
+  }
+
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+
+    .product-card {
+      background: #ffffff;
+      border-radius: 14px;
+      border: 1px solid #e2e8f0;
+      overflow: hidden;
+      position: relative;
+      transition: all 0.2s ease;
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 12px 24px -10px rgba(0, 0, 0, 0.08);
+      }
+
+      .card-badge {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        padding: 4px 8px;
+        border-radius: 6px;
+        font-size: 11px;
+        font-weight: 700;
+
+        &.sale {
+          background: #f59e0b;
+          color: #ffffff;
+        }
+
+        &.low-stock {
+          background: #ef4444;
+          color: #ffffff;
+        }
+      }
+
+      .card-media {
+        height: 180px;
+        background: #f8fafc;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 54px;
+        border-bottom: 1px solid #f1f5f9;
+      }
+
+      .card-info {
+        padding: 16px;
+
+        .category-label {
+          font-size: 11px;
+          text-transform: uppercase;
+          color: #64748b;
+          font-weight: 700;
+          letter-spacing: 0.5px;
+        }
+
+        .product-title {
+          font-size: 15px;
+          font-weight: 700;
+          color: #0f172a;
+          margin: 6px 0 4px;
+          line-height: 1.4;
+        }
+
+        .barcode-tag {
+          font-family: 'JetBrains Mono', monospace;
+          font-size: 11px;
+          color: #94a3b8;
+          display: block;
+          margin-bottom: 14px;
+        }
+
+        .card-footer {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .price-box {
+            display: flex;
+            flex-direction: column;
+
+            .price-current {
+              font-family: 'JetBrains Mono', monospace;
+              font-size: 18px;
+              font-weight: 800;
+              color: #047857;
+            }
+
+            .price-old {
+              font-size: 12px;
+              color: #94a3b8;
+              text-decoration: line-through;
+            }
+          }
+
+          .btn-cart {
+            padding: 8px 14px;
+            background: #ecfdf5;
+            color: #047857;
+            border: 1px solid #10b981;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+
+            &:hover {
+              background: #10b981;
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+}

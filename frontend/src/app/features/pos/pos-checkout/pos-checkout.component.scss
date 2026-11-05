@@ -1,0 +1,317 @@
+.pos-layout {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 20px;
+  height: calc(100vh - 40px);
+  padding: 20px;
+  background: #0f172a;
+  color: #f8fafc;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+
+  .pos-scan-area {
+    display: flex;
+    flex-direction: column;
+    background: #1e293b;
+    border-radius: 16px;
+    border: 1px solid #334155;
+    padding: 20px;
+    overflow: hidden;
+
+    .barcode-search-box {
+      display: flex;
+      align-items: center;
+      background: #0b0f17;
+      border: 2px solid #10b981;
+      border-radius: 12px;
+      padding: 12px 18px;
+      gap: 12px;
+      margin-bottom: 20px;
+
+      .scanner-icon {
+        font-family: monospace;
+        font-size: 20px;
+        color: #10b981;
+        letter-spacing: -2px;
+      }
+
+      .barcode-input {
+        flex: 1;
+        background: transparent;
+        border: none;
+        color: #ffffff;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 16px;
+        outline: none;
+      }
+
+      .scanner-status {
+        background: #10b981;
+        color: #0b0f17;
+        padding: 4px 8px;
+        border-radius: 6px;
+        font-weight: 800;
+        font-size: 11px;
+      }
+    }
+
+    .order-table-container {
+      flex: 1;
+      overflow-y: auto;
+
+      .pos-table {
+        width: 100%;
+        border-collapse: collapse;
+
+        th {
+          text-align: left;
+          padding: 12px;
+          background: #0f172a;
+          color: #94a3b8;
+          font-size: 12px;
+          text-transform: uppercase;
+        }
+
+        td {
+          padding: 14px 12px;
+          border-bottom: 1px solid #334155;
+          font-size: 14px;
+        }
+
+        .product-name {
+          font-weight: 600;
+        }
+
+        .qty-control {
+          display: inline-flex;
+          align-items: center;
+          background: #0f172a;
+          border-radius: 6px;
+          border: 1px solid #475569;
+
+          .btn-qty {
+            background: transparent;
+            border: none;
+            color: #ffffff;
+            width: 28px;
+            height: 28px;
+            cursor: pointer;
+          }
+
+          .qty-val {
+            font-weight: 700;
+            padding: 0 8px;
+          }
+        }
+
+        .btn-del {
+          background: transparent;
+          border: none;
+          color: #ef4444;
+          font-size: 16px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .pos-shortcuts {
+      display: flex;
+      gap: 12px;
+      padding-top: 16px;
+      border-top: 1px solid #334155;
+
+      .key-badge {
+        font-size: 12px;
+        color: #94a3b8;
+
+        kbd {
+          background: #0f172a;
+          border: 1px solid #475569;
+          padding: 2px 6px;
+          border-radius: 4px;
+          color: #f1f5f9;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .pos-billing-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #1e293b;
+    border-radius: 16px;
+    border: 1px solid #334155;
+    padding: 24px;
+
+    .customer-card {
+      background: #0f172a;
+      border: 1px solid #334155;
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 16px;
+
+      .card-label {
+        font-size: 12px;
+        color: #94a3b8;
+        margin-bottom: 8px;
+      }
+
+      .customer-input-row {
+        display: flex;
+        gap: 8px;
+
+        .cust-phone-input {
+          flex: 1;
+          background: #1e293b;
+          border: 1px solid #475569;
+          color: #ffffff;
+          padding: 8px 12px;
+          border-radius: 8px;
+          font-family: 'JetBrains Mono', monospace;
+        }
+
+        .btn-cust-check {
+          background: #334155;
+          color: #ffffff;
+          border: none;
+          border-radius: 8px;
+          padding: 8px 16px;
+          font-weight: 700;
+          cursor: pointer;
+        }
+      }
+
+      .cust-details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+
+        .cust-name {
+          font-weight: 700;
+        }
+
+        .cust-tier {
+          background: rgba(245, 158, 11, 0.15);
+          color: #f59e0b;
+          border: 1px solid rgba(245, 158, 11, 0.3);
+          padding: 2px 8px;
+          border-radius: 4px;
+          font-size: 11px;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .promo-box {
+      background: #0f172a;
+      border: 1px dashed #475569;
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 16px;
+
+      .promo-title {
+        font-size: 12px;
+        color: #94a3b8;
+        margin-bottom: 8px;
+      }
+
+      .applied-promo {
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+        color: #f59e0b;
+        margin-bottom: 4px;
+      }
+    }
+
+    .calc-section {
+      .calc-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 8px 0;
+        font-size: 14px;
+        color: #cbd5e1;
+        border-bottom: 1px dashed #334155;
+      }
+
+      .grand-total-box {
+        background: #0b0f17;
+        border: 2px solid #10b981;
+        border-radius: 12px;
+        padding: 16px;
+        margin: 16px 0;
+        display: flex;
+        flex-direction: column;
+
+        .total-label {
+          font-size: 12px;
+          color: #94a3b8;
+          font-weight: 700;
+        }
+
+        .total-value {
+          font-size: 32px;
+          font-weight: 800;
+          color: #10b981;
+        }
+      }
+
+      .payment-method-selector {
+        display: flex;
+        gap: 10px;
+        margin-bottom: 16px;
+
+        .pay-btn {
+          flex: 1;
+          padding: 12px;
+          background: #0f172a;
+          border: 1px solid #475569;
+          border-radius: 8px;
+          color: #ffffff;
+          font-weight: 700;
+          cursor: pointer;
+
+          &.active {
+            border-color: #10b981;
+            background: rgba(16, 185, 129, 0.1);
+            color: #10b981;
+          }
+        }
+      }
+
+      .btn-checkout {
+        width: 100%;
+        padding: 18px;
+        background: linear-gradient(135deg, #10b981, #047857);
+        border: none;
+        border-radius: 12px;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 800;
+        cursor: pointer;
+        box-shadow: 0 8px 24px rgba(16, 185, 129, 0.35);
+      }
+    }
+  }
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', monospace;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-emerald {
+  color: #10b981;
+}
+.text-orange {
+  color: #f59e0b;
+}
+.font-bold {
+  font-weight: 700;
+}

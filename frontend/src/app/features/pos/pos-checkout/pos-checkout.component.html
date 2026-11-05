@@ -1,0 +1,123 @@
+<div class="pos-layout">
+  <!-- Cột Trái: Quét Barcode & Danh sách sản phẩm thanh toán -->
+  <main class="pos-scan-area">
+    <div class="barcode-search-box">
+      <div class="scanner-icon">|||||</div>
+      <input type="text" class="barcode-input" placeholder="Quét mã vạch Barcode hoặc nhập SKU... (F2: Tra cứu)" value="8934567890123" />
+      <span class="scanner-status">READY</span>
+    </div>
+
+    <div class="order-table-container">
+      <table class="pos-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Mã Barcode / SKU</th>
+            <th>Tên sản phẩm</th>
+            <th>ĐVT</th>
+            <th class="text-center">SL</th>
+            <th class="text-right">Đơn giá</th>
+            <th class="text-right">Thành tiền</th>
+            <th class="text-center">Xóa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td class="font-mono">8934567890123</td>
+            <td class="product-name">Sữa tươi tiệt trùng Vinamilk 100% 1L</td>
+            <td>Hộp</td>
+            <td class="text-center">
+              <div class="qty-control">
+                <button class="btn-qty">-</button>
+                <span class="qty-val">2</span>
+                <button class="btn-qty">+</button>
+              </div>
+            </td>
+            <td class="text-right font-mono">20.000₫</td>
+            <td class="text-right font-mono font-bold text-emerald">40.000₫</td>
+            <td class="text-center"><button class="btn-del">✕</button></td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td class="font-mono">8934822001192</td>
+            <td class="product-name">Mì gói Hảo Hảo tôm chua cay</td>
+            <td>Gói</td>
+            <td class="text-center">
+              <div class="qty-control">
+                <button class="btn-qty">-</button>
+                <span class="qty-val">5</span>
+                <button class="btn-qty">+</button>
+              </div>
+            </td>
+            <td class="text-right font-mono">4.500₫</td>
+            <td class="text-right font-mono font-bold text-emerald">22.500₫</td>
+            <td class="text-center"><button class="btn-del">✕</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Phím tắt nhanh thu ngân -->
+    <div class="pos-shortcuts">
+      <span class="key-badge"><kbd>F2</kbd> Tìm mặt hàng</span>
+      <span class="key-badge"><kbd>F4</kbd> Khách thành viên</span>
+      <span class="key-badge"><kbd>F7</kbd> Khuyến mãi</span>
+      <span class="key-badge"><kbd>F9</kbd> Thanh toán & In Bill</span>
+    </div>
+  </main>
+
+  <!-- Cột Phải: Khách hàng, Khuyến mãi & Tính tiền -->
+  <aside class="pos-billing-area">
+    <div class="customer-card">
+      <div class="card-label">Khách hàng thành viên (SĐT)</div>
+      <div class="customer-input-row">
+        <input type="text" placeholder="Nhập SĐT khách hàng..." value="0912.345.678" class="cust-phone-input" />
+        <button class="btn-cust-check">Tìm</button>
+      </div>
+      <div class="cust-details">
+        <span class="cust-name">Phan Nguyễn Gia Huy</span>
+        <span class="cust-tier">Hạng Vàng (-5%)</span>
+      </div>
+    </div>
+
+    <div class="promo-box">
+      <div class="promo-title">Chương trình khuyến mãi áp dụng</div>
+      <div class="applied-promo">
+        <span>KM Giảm giá sữa 10%</span>
+        <span class="font-mono">-4.000₫</span>
+      </div>
+      <div class="applied-promo">
+        <span>Ưu đãi thành viên Hạng Vàng</span>
+        <span class="font-mono">-1.125₫</span>
+      </div>
+    </div>
+
+    <div class="calc-section">
+      <div class="calc-row">
+        <span>Tổng tiền hàng (7 món)</span>
+        <span class="font-mono">62.500₫</span>
+      </div>
+      <div class="calc-row text-orange">
+        <span>Chiết khấu khuyến mãi</span>
+        <span class="font-mono">-5.125₫</span>
+      </div>
+      <div class="calc-row text-emerald">
+        <span>Điểm tích lũy cộng dồn</span>
+        <span class="font-mono">+57 điểm</span>
+      </div>
+
+      <div class="grand-total-box">
+        <span class="total-label">KHÁCH CẦN THANH TOÁN</span>
+        <span class="total-value font-mono">57.375₫</span>
+      </div>
+
+      <div class="payment-method-selector">
+        <button class="pay-btn active">💵 Tiền mặt</button>
+        <button class="pay-btn">📱 Quét QR Chuyển khoản</button>
+      </div>
+
+      <button class="btn-checkout">F9 - XÁC NHẬN THANH TOÁN & IN HÓA ĐƠN</button>
+    </div>
+  </aside>
+</div>

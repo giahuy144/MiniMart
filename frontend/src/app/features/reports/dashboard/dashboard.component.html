@@ -1,0 +1,101 @@
+<div class="reports-page">
+  <div class="reports-header">
+    <div>
+      <h2 class="title">Báo Cáo Hoạt Động & Doanh Thu (Report Service)</h2>
+      <p class="subtitle">Tổng hợp dữ liệu Read-only từ Order, Inventory, Customer & Promotion Service</p>
+    </div>
+    <div class="export-actions">
+      <div class="date-range-picker">
+        <span>📅 Hôm nay: 01/11/2026</span>
+      </div>
+      <button class="btn btn-export">📊 Xuất Excel (Mục 7.2)</button>
+      <button class="btn btn-export">📄 Xuất PDF</button>
+    </div>
+  </div>
+
+  <!-- KPI Row -->
+  <div class="kpi-grid">
+    <div class="kpi-card">
+      <span class="label">Tổng doanh thu thực tế</span>
+      <span class="val text-emerald">14.850.000₫</span>
+      <span class="trend">▲ +12.4% so với hôm qua</span>
+    </div>
+    <div class="kpi-card">
+      <span class="label">Tổng hóa đơn thành công</span>
+      <span class="val">184 đơn</span>
+      <span class="trend text-muted">Đơn hủy hoàn kho: 2</span>
+    </div>
+    <div class="kpi-card">
+      <span class="label">Chiết khấu khuyến mãi đã áp dụng</span>
+      <span class="val text-orange">1.240.000₫</span>
+      <span class="trend text-orange">Promotion Service</span>
+    </div>
+    <div class="kpi-card">
+      <span class="label">Khách hàng tích điểm mới</span>
+      <span class="val text-blue">+23 khách</span>
+      <span class="trend text-blue">Hạng Bạc & Vàng tăng</span>
+    </div>
+  </div>
+
+  <!-- Báo cáo sản phẩm bán chạy & Cơ cấu danh mục -->
+  <div class="chart-grid">
+    <div class="report-box">
+      <div class="box-title">Top Mặt Hàng Bán Chạy Nhất (Mục 7.2)</div>
+      <div class="bar-item">
+        <div class="bar-header">
+          <span class="item-name">1. Sữa tươi tiệt trùng Vinamilk 100% 1L</span>
+          <span class="item-stat font-mono">148 hộp (2.960.000₫)</span>
+        </div>
+        <div class="bar-track">
+          <div class="bar-fill" style="width: 85%;"></div>
+        </div>
+      </div>
+
+      <div class="bar-item">
+        <div class="bar-header">
+          <span class="item-name">2. Mì gói Hảo Hảo tôm chua cay</span>
+          <span class="item-stat font-mono">320 gói (1.440.000₫)</span>
+        </div>
+        <div class="bar-track">
+          <div class="bar-fill orange" style="width: 68%;"></div>
+        </div>
+      </div>
+
+      <div class="bar-item">
+        <div class="bar-header">
+          <span class="item-name">3. Bánh mì hoa cúc Harrys Pháp 500g</span>
+          <span class="item-stat font-mono">22 chiếc (2.750.000₫)</span>
+        </div>
+        <div class="bar-track">
+          <div class="bar-fill blue" style="width: 54%;"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="report-box">
+      <div class="box-title">Phân Bổ Doanh Thu Theo Danh Mục</div>
+      <div class="category-breakdown">
+        <div class="cat-row">
+          <span class="cat-dot green"></span>
+          <span class="cat-name">Thực phẩm khô & Ăn liền</span>
+          <span class="cat-pct font-mono">42%</span>
+        </div>
+        <div class="cat-row">
+          <span class="cat-dot orange"></span>
+          <span class="cat-name">Đồ uống & Sữa</span>
+          <span class="cat-pct font-mono">35%</span>
+        </div>
+        <div class="cat-row">
+          <span class="cat-dot blue"></span>
+          <span class="cat-name">Bánh kẹo & Bánh tươi</span>
+          <span class="cat-pct font-mono">18%</span>
+        </div>
+        <div class="cat-row">
+          <span class="cat-dot gray"></span>
+          <span class="cat-name">Hóa phẩm gia dụng</span>
+          <span class="cat-pct font-mono">5%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

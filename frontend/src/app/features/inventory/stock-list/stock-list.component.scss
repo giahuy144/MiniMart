@@ -1,0 +1,211 @@
+.inventory-page {
+  padding: 24px;
+  max-width: 1300px;
+  margin: 0 auto;
+
+  .header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+
+    .page-title {
+      font-size: 22px;
+      font-weight: 800;
+      color: #0f172a;
+    }
+
+    .page-subtitle {
+      font-size: 13px;
+      color: #64748b;
+      margin-top: 4px;
+    }
+
+    .action-buttons {
+      display: flex;
+      gap: 12px;
+
+      .btn {
+        padding: 10px 18px;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 13px;
+        cursor: pointer;
+
+        &.btn-outline {
+          background: #ffffff;
+          border: 1px solid #cbd5e1;
+          color: #334155;
+        }
+
+        &.btn-primary {
+          background: #10b981;
+          border: 1px solid #10b981;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .kpi-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-bottom: 24px;
+
+    .kpi-card {
+      background: #ffffff;
+      padding: 18px;
+      border-radius: 12px;
+      border: 1px solid #e2e8f0;
+      display: flex;
+      flex-direction: column;
+
+      &.border-warning {
+        border-color: rgba(245, 158, 11, 0.4);
+      }
+      &.border-danger {
+        border-color: rgba(239, 68, 68, 0.4);
+      }
+
+      .kpi-label {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: #64748b;
+      }
+
+      .kpi-value {
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 28px;
+        font-weight: 800;
+        margin: 6px 0;
+      }
+
+      .kpi-sub {
+        font-size: 11px;
+        color: #94a3b8;
+      }
+    }
+  }
+
+  .filter-bar {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 16px;
+
+    .search-input {
+      flex: 1;
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid #cbd5e1;
+      font-size: 14px;
+    }
+
+    .filter-select {
+      padding: 10px 14px;
+      border-radius: 8px;
+      border: 1px solid #cbd5e1;
+      background: #ffffff;
+      font-size: 13px;
+      font-weight: 600;
+    }
+  }
+
+  .table-card {
+    background: #ffffff;
+    border-radius: 14px;
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+
+    .inventory-table {
+      width: 100%;
+      border-collapse: collapse;
+
+      th {
+        text-align: left;
+        padding: 12px 16px;
+        background: #f8fafc;
+        color: #64748b;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-bottom: 1px solid #e2e8f0;
+      }
+
+      td {
+        padding: 14px 16px;
+        border-bottom: 1px solid #f1f5f9;
+        font-size: 14px;
+      }
+
+      tr.row-warning {
+        background: rgba(245, 158, 11, 0.03);
+      }
+      tr.row-danger {
+        background: rgba(239, 68, 68, 0.03);
+      }
+
+      .badge {
+        padding: 4px 8px;
+        border-radius: 6px;
+        font-size: 11px;
+        font-weight: 700;
+
+        &.badge-warning {
+          background: #fef3c7;
+          color: #b45309;
+        }
+        &.badge-success {
+          background: #d1fae5;
+          color: #047857;
+        }
+        &.badge-danger {
+          background: #fee2e2;
+          color: #b91c1c;
+        }
+      }
+
+      .btn-action {
+        padding: 6px 10px;
+        background: #f1f5f9;
+        border: 1px solid #cbd5e1;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+        margin-right: 6px;
+      }
+
+      .btn-action-primary {
+        padding: 6px 10px;
+        background: #10b981;
+        border: 1px solid #10b981;
+        color: #ffffff;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      .btn-action-danger {
+        padding: 6px 10px;
+        background: #ef4444;
+        border: 1px solid #ef4444;
+        color: #ffffff;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.font-mono { font-family: 'JetBrains Mono', monospace; }
+.font-bold { font-weight: 700; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.text-emerald { color: #047857; }
+.text-warning { color: #b45309; }
+.text-danger { color: #b91c1c; }

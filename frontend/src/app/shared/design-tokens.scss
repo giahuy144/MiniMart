@@ -1,0 +1,22 @@
+/* MiniMart Design Tokens & UI Architecture */
+:root {
+  /* Brandkit Color System */
+  --minimart-primary: #10B981;
+  --minimart-primary-hover: #047857;
+  --minimart-primary-light: #ECFDF5;
+  --minimart-accent-promo: #F59E0B;
+  --minimart-danger-alert: #EF4444;
+  --minimart-info-blue: #3B82F6;
+
+  /* Neutrals */
+  --minimart-bg-dark: #0F172A;
+  --minimart-bg-light: #F8FAFC;
+  --minimart-surface-card: #FFFFFF;
+  --minimart-border-subtle: #E2E8F0;
+  --minimart-text-main: #0F172A;
+  --minimart-text-muted: #64748B;
+
+  /* Typography */
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-numeric: 'JetBrains Mono', 'Roboto Mono', monospace;
+}

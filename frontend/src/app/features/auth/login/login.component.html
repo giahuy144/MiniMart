@@ -1,0 +1,79 @@
+<div class="auth-page">
+  <div class="auth-card">
+    <div class="auth-header">
+      <div class="brand-badge">M</div>
+      <h2 class="auth-title">Đăng Nhập MiniMart</h2>
+      <p class="auth-subtitle">Cổng xác thực tập trung – Auth/User Service (Port 5001)</p>
+    </div>
+
+    <!-- Chọn tài khoản demo nhanh -->
+    <div class="role-selector">
+      @for (acc of demoAccounts; track acc.role) {
+        <button
+          class="role-btn"
+          [class.active]="selectedDemo.role === acc.role"
+          type="button"
+          (click)="selectDemo(acc)">
+          {{ acc.label }}
+        </button>
+      }
+    </div>
+
+    <!-- Form đăng nhập -->
+    <form class="auth-form" (ngSubmit)="onSubmit()" #loginForm="ngForm">
+
+      <!-- Thông báo lỗi -->
+      @if (errorMsg()) {
+        <div class="alert alert-error">⚠️ {{ errorMsg() }}</div>
+      }
+
+      <div class="form-group">
+        <label class="form-label">Tên đăng nhập</label>
+        <div class="input-wrap">
+          <span class="input-icon">👤</span>
+          <input
+            type="text"
+            class="form-input"
+            placeholder="admin / cashier / stockkeeper / customer"
+            [(ngModel)]="form.username"
+            name="username"
+            required
+            autocomplete="username" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="label-row">
+          <label class="form-label">Mật khẩu</label>
+        </div>
+        <div class="input-wrap">
+          <span class="input-icon">🔒</span>
+          <input
+            [type]="showPwd() ? 'text' : 'password'"
+            class="form-input"
+            placeholder="Nhập mật khẩu"
+            [(ngModel)]="form.password"
+            name="password"
+            required
+            autocomplete="current-password" />
+          <span class="toggle-pwd" (click)="togglePwd()">
+            {{ showPwd() ? '🙈' : '👁️' }}
+          </span>
+        </div>
+      </div>
+
+      <button type="submit" class="btn-submit" [disabled]="isLoading()">
+        @if (isLoading()) {
+          <span>⏳ Đang xác thực...</span>
+        } @else {
+          <span>ĐĂNG NHẬP VÀO HỆ THỐNG</span>
+        }
+      </button>
+
+      <div class="auth-footer">
+        <span>Chưa có tài khoản? </span>
+        <a routerLink="/register" class="switch-link">Đăng ký thành viên mới</a>
+      </div>
+    </form>
+  </div>
+</div>
