@@ -86,3 +86,5 @@ D:\SOA\MiniMart\backend\src\InventoryService\obj\Debug\net9.0\refint\InventorySe
 D:\SOA\MiniMart\backend\src\InventoryService\obj\Debug\net9.0\InventoryService.pdb
 D:\SOA\MiniMart\backend\src\InventoryService\obj\Debug\net9.0\InventoryService.genruntimeconfig.cache
 D:\SOA\MiniMart\backend\src\InventoryService\obj\Debug\net9.0\ref\InventoryService.dll
+D:\SOA\MiniMart\backend\src\InventoryService\bin\Debug\net9.0\MySqlConnector.dll
+D:\SOA\MiniMart\backend\src\InventoryService\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll

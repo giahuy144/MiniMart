@@ -16,11 +16,19 @@ $services = @(
 )
 
 foreach ($s in $services) {
+    $listener = Get-NetTCPConnection -LocalPort $s.Port -State Listen -ErrorAction SilentlyContinue | Select-Object -First 1
+    if ($listener) {
+        $owner = Get-Process -Id $listener.OwningProcess -ErrorAction SilentlyContinue
+        $ownerName = if ($owner) { $owner.ProcessName } else { "PID $($listener.OwningProcess)" }
+        Write-Host "Port $($s.Port) is already in use by $ownerName; skipping $($s.Name)." -ForegroundColor Yellow
+        continue
+    }
+
     Write-Host "Dang khoi chay $($s.Name) tai http://localhost:$($s.Port)..." -ForegroundColor Green
     Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd $(Join-Path $PSScriptRoot $s.Path); dotnet run"
 }
 
-Write-Host "`nToan bo 8 services da duoc mo trong cac cua so rieng biet!" -ForegroundColor Yellow
+Write-Host "`nDa xu ly danh sach service; cac cong dang duoc su dung da duoc bo qua." -ForegroundColor Yellow
 Write-Host "API Gateway chay tai: http://localhost:5000" -ForegroundColor Cyan
 Write-Host "Swagger docs cua tung service:" -ForegroundColor Cyan
 Write-Host " - AuthService:       http://localhost:5001/swagger"

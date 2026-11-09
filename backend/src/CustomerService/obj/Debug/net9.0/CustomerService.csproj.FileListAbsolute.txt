@@ -86,3 +86,5 @@ D:\SOA\MiniMart\backend\src\CustomerService\obj\Debug\net9.0\refint\CustomerServ
 D:\SOA\MiniMart\backend\src\CustomerService\obj\Debug\net9.0\CustomerService.pdb
 D:\SOA\MiniMart\backend\src\CustomerService\obj\Debug\net9.0\CustomerService.genruntimeconfig.cache
 D:\SOA\MiniMart\backend\src\CustomerService\obj\Debug\net9.0\ref\CustomerService.dll
+D:\SOA\MiniMart\backend\src\CustomerService\bin\Debug\net9.0\MySqlConnector.dll
+D:\SOA\MiniMart\backend\src\CustomerService\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll

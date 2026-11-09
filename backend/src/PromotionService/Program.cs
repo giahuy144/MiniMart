@@ -9,16 +9,23 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddCustomSwagger("MiniMart Promotion Service");
 
+var databaseProvider = builder.Configuration["Database:Provider"] ?? "MySql";
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<PromotionDbContext>(options =>
 {
-    if (!string.IsNullOrEmpty(connectionString))
+    if (databaseProvider.Equals("InMemory", StringComparison.OrdinalIgnoreCase))
     {
-        options.UseSqlServer(connectionString);
+        options.UseInMemoryDatabase("MiniMart_PromotionDb");
+    }
+    else if (databaseProvider.Equals("MySql", StringComparison.OrdinalIgnoreCase))
+    {
+        if (string.IsNullOrWhiteSpace(connectionString))
+            throw new InvalidOperationException("ConnectionStrings:DefaultConnection is required for MySQL.");
+        options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
     }
     else
     {
-        options.UseInMemoryDatabase("MiniMart_PromotionDb");
+        throw new InvalidOperationException($"Unsupported Database:Provider '{databaseProvider}'. Use MySql or InMemory.");
     }
 });
 
@@ -35,7 +42,8 @@ using (var scope = app.Services.CreateScope())
     }
     catch (Exception ex)
     {
-        app.Logger.LogWarning(ex, "Không thể kết nối SQL Server, chuyển sang In-Memory Database...");
+        app.Logger.LogError(ex, "Could not initialize PromotionService database using {DatabaseProvider}.", databaseProvider);
+        throw;
     }
 }
 

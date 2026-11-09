@@ -86,3 +86,5 @@ D:\SOA\MiniMart\backend\src\AuthService\bin\Debug\net9.0\runtimes\win\lib\net6.0
 D:\SOA\MiniMart\backend\src\AuthService\bin\Debug\net9.0\MiniMart.Shared.dll
 D:\SOA\MiniMart\backend\src\AuthService\bin\Debug\net9.0\MiniMart.Shared.pdb
 D:\SOA\MiniMart\backend\src\AuthService\obj\Debug\net9.0\AuthService.sourcelink.json
+D:\SOA\MiniMart\backend\src\AuthService\bin\Debug\net9.0\MySqlConnector.dll
+D:\SOA\MiniMart\backend\src\AuthService\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll

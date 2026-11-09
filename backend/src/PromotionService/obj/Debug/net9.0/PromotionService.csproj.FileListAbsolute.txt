@@ -86,3 +86,5 @@ D:\SOA\MiniMart\backend\src\PromotionService\obj\Debug\net9.0\refint\PromotionSe
 D:\SOA\MiniMart\backend\src\PromotionService\obj\Debug\net9.0\PromotionService.pdb
 D:\SOA\MiniMart\backend\src\PromotionService\obj\Debug\net9.0\PromotionService.genruntimeconfig.cache
 D:\SOA\MiniMart\backend\src\PromotionService\obj\Debug\net9.0\ref\PromotionService.dll
+D:\SOA\MiniMart\backend\src\PromotionService\bin\Debug\net9.0\MySqlConnector.dll
+D:\SOA\MiniMart\backend\src\PromotionService\bin\Debug\net9.0\Pomelo.EntityFrameworkCore.MySql.dll
