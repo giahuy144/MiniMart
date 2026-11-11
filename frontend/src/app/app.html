@@ -1,29 +1,35 @@
 <div class="app-root">
-  <!-- Navigation Header chung cho hệ thống MiniMart -->
   <header class="app-navbar">
-    <div class="nav-left">
-      <div class="logo-circle">M</div>
-      <div class="app-titles">
-        <span class="app-name">MINIMART SOA</span>
-        <span class="app-sub">Kiến trúc Hướng Dịch Vụ</span>
+    <a class="brand" routerLink="/products"
+      ><span class="brand-mark">M</span><span>MiniMart</span></a
+    >
+    @if (auth.isLoggedIn()) {
+      <nav>
+        <a routerLink="/products" routerLinkActive="active">Sản phẩm</a>
+        @if (auth.userRole() === 'Customer') {
+          <a routerLink="/cart" routerLinkActive="active"
+            >Giỏ hàng <b>{{ cart.itemCount() }}</b></a
+          >
+        }
+        @if (auth.userRole() === 'Admin' || auth.userRole() === 'Stockkeeper') {
+          <a routerLink="/inventory">Tồn kho</a>
+        }
+        @if (auth.userRole() === 'Cashier') {
+          <a routerLink="/pos">Bán hàng tại quầy</a>
+        }
+        @if (auth.userRole() === 'Admin') {
+          <a routerLink="/reports">Báo cáo</a>
+        }
+      </nav>
+      <div class="account">
+        <span>{{ auth.fullName() }}</span
+        ><button (click)="auth.logout()">Đăng xuất</button>
       </div>
-    </div>
-
-    <nav class="nav-links">
-      <a routerLink="/products" routerLinkActive="active" class="nav-item">🛒 Khách hàng (Catalog)</a>
-      <a routerLink="/pos" routerLinkActive="active" class="nav-item">⚡ POS Quầy (Thu ngân)</a>
-      <a routerLink="/inventory" routerLinkActive="active" class="nav-item">📦 Tồn kho (Thủ kho)</a>
-      <a routerLink="/reports" routerLinkActive="active" class="nav-item">📊 Báo cáo (Admin)</a>
-    </nav>
-
-    <div class="nav-user">
-      <a routerLink="/login" routerLinkActive="active" class="auth-btn btn-login">Đăng nhập</a>
-      <a routerLink="/register" routerLinkActive="active" class="auth-btn btn-register">Đăng ký</a>
-    </div>
+    } @else {
+      <div class="account">
+        <a routerLink="/login">Đăng nhập</a><a routerLink="/register">Tạo tài khoản</a>
+      </div>
+    }
   </header>
-
-  <!-- Router Outlet hiển thị giao diện theo từng route -->
-  <main class="app-content">
-    <router-outlet></router-outlet>
-  </main>
+  <main><router-outlet></router-outlet></main>
 </div>

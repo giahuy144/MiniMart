@@ -1,0 +1,435 @@
+{
+  "info": {
+    "_postman_id": "b44b2f95-6c54-4a3b-9445-3a1789f85fb2",
+    "name": "MiniMart AuthService - Week 2",
+    "description": "AuthService requests for the MiniMart team. Seed logins are included for all four roles. Register creates a Customer; run Login - Registered User before profile/password requests. Admin token is saved separately for Get Users and account status toggle.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5000"
+    },
+    {
+      "key": "token",
+      "value": ""
+    },
+    {
+      "key": "adminToken",
+      "value": ""
+    },
+    {
+      "key": "userId",
+      "value": ""
+    },
+    {
+      "key": "targetUserId",
+      "value": ""
+    },
+    {
+      "key": "registeredUserId",
+      "value": ""
+    },
+    {
+      "key": "registeredUsername",
+      "value": ""
+    },
+    {
+      "key": "registeredEmail",
+      "value": ""
+    },
+    {
+      "key": "registeredPassword",
+      "value": "MiniMart123!"
+    },
+    {
+      "key": "currentPassword",
+      "value": ""
+    },
+    {
+      "key": "newPassword",
+      "value": "MiniMart456!"
+    }
+  ],
+  "item": [
+    {
+      "name": "Login - Admin",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"admin@minimart.vn\",\n  \"password\": \"admin123\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{baseUrl}}/api/auth/login"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Login succeeds', function () { pm.response.to.have.status(200); });",
+              "const body = pm.response.json();",
+              "pm.collectionVariables.set('token', body.data.token);",
+              "pm.collectionVariables.set('userId', body.data.userId);",
+              "pm.collectionVariables.set('currentPassword', 'admin123');",
+              "pm.collectionVariables.set('adminToken', body.data.token);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Login - Cashier",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"cashier@minimart.vn\",\n  \"password\": \"cashier123\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{baseUrl}}/api/auth/login"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Login succeeds', function () { pm.response.to.have.status(200); });",
+              "const body = pm.response.json();",
+              "pm.collectionVariables.set('token', body.data.token);",
+              "pm.collectionVariables.set('userId', body.data.userId);",
+              "pm.collectionVariables.set('currentPassword', 'cashier123');",
+              "pm.test('Role matches seeded account', function () { pm.expect(body.data.role).to.eql('Cashier'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Login - Stockkeeper",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"stockkeeper@minimart.vn\",\n  \"password\": \"stock123\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{baseUrl}}/api/auth/login"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Login succeeds', function () { pm.response.to.have.status(200); });",
+              "const body = pm.response.json();",
+              "pm.collectionVariables.set('token', body.data.token);",
+              "pm.collectionVariables.set('userId', body.data.userId);",
+              "pm.collectionVariables.set('currentPassword', 'stock123');",
+              "pm.test('Role matches seeded account', function () { pm.expect(body.data.role).to.eql('Stockkeeper'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Login - Customer",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"email\": \"customer@gmail.com\",\n  \"password\": \"customer123\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{baseUrl}}/api/auth/login"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Login succeeds', function () { pm.response.to.have.status(200); });",
+              "const body = pm.response.json();",
+              "pm.collectionVariables.set('token', body.data.token);",
+              "pm.collectionVariables.set('userId', body.data.userId);",
+              "pm.collectionVariables.set('currentPassword', 'customer123');",
+              "pm.test('Role matches seeded account', function () { pm.expect(body.data.role).to.eql('Customer'); });"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Register - Customer",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"username\": \"{{registeredUsername}}\",\n  \"fullName\": \"Postman Test User\",\n  \"email\": \"{{registeredEmail}}\",\n  \"phoneNumber\": \"0901234567\",\n  \"password\": \"{{registeredPassword}}\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{baseUrl}}/api/auth/register"
+      },
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "const username = 'pm' + Date.now();",
+              "pm.collectionVariables.set('registeredUsername', username);",
+              "pm.collectionVariables.set('registeredEmail', username + '@example.com');"
+            ]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Customer account created', function () { pm.expect(pm.response.code).to.be.oneOf([200, 201]); });",
+              "const body = pm.response.json();",
+              "pm.collectionVariables.set('registeredUserId', body.data.id);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Login - Registered User",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"email\":\"{{registeredEmail}}\",\"password\":\"{{registeredPassword}}\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{baseUrl}}/api/auth/login"
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Registered user can login', function () { pm.response.to.have.status(200); });",
+              "const body = pm.response.json();",
+              "pm.collectionVariables.set('token', body.data.token);",
+              "pm.collectionVariables.set('userId', body.data.userId);",
+              "pm.collectionVariables.set('currentPassword', pm.collectionVariables.get('registeredPassword'));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Get Me",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/auth/me",
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Users - Admin",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/api/auth/users",
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{adminToken}}",
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Admin can list users', function () { pm.response.to.have.status(200); });",
+              "const body = pm.response.json();",
+              "const target = body.data.find(user => user.id === pm.collectionVariables.get('registeredUserId'));",
+              "if (target) pm.collectionVariables.set('targetUserId', target.id);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Update Profile",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"fullName\":\"Postman Updated User\",\"phoneNumber\":\"0912345678\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{baseUrl}}/api/auth/profile",
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Change Password",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"oldPassword\":\"{{currentPassword}}\",\"newPassword\":\"{{newPassword}}\",\"confirmPassword\":\"{{newPassword}}\"}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": "{{baseUrl}}/api/auth/change-password",
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{token}}",
+              "type": "string"
+            }
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Password changed', function () { pm.response.to.have.status(200); });",
+              "if (pm.response.code === 200) pm.collectionVariables.set('currentPassword', pm.collectionVariables.get('newPassword'));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Toggle User Status - Admin",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "url": "{{baseUrl}}/api/auth/users/{{targetUserId}}/toggle-status",
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "{{adminToken}}",
+              "type": "string"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

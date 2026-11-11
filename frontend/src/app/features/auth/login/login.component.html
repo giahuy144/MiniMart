@@ -1,79 +1,49 @@
-<div class="auth-page">
+<section class="auth-page">
   <div class="auth-card">
     <div class="auth-header">
-      <div class="brand-badge">M</div>
-      <h2 class="auth-title">Đăng Nhập MiniMart</h2>
-      <p class="auth-subtitle">Cổng xác thực tập trung – Auth/User Service (Port 5001)</p>
+      <span class="brand-badge">M</span>
+      <h1>Chào mừng bạn trở lại</h1>
+      <p>Đăng nhập MiniMart bằng email của bạn.</p>
     </div>
-
-    <!-- Chọn tài khoản demo nhanh -->
-    <div class="role-selector">
-      @for (acc of demoAccounts; track acc.role) {
-        <button
-          class="role-btn"
-          [class.active]="selectedDemo.role === acc.role"
-          type="button"
-          (click)="selectDemo(acc)">
-          {{ acc.label }}
-        </button>
-      }
-    </div>
-
-    <!-- Form đăng nhập -->
-    <form class="auth-form" (ngSubmit)="onSubmit()" #loginForm="ngForm">
-
-      <!-- Thông báo lỗi -->
+    <form (ngSubmit)="onSubmit()" #f="ngForm">
       @if (errorMsg()) {
-        <div class="alert alert-error">⚠️ {{ errorMsg() }}</div>
+        <div class="alert">{{ errorMsg() }}</div>
       }
-
       <div class="form-group">
-        <label class="form-label">Tên đăng nhập</label>
-        <div class="input-wrap">
-          <span class="input-icon">👤</span>
-          <input
-            type="text"
-            class="form-input"
-            placeholder="admin / cashier / stockkeeper / customer"
-            [(ngModel)]="form.username"
-            name="username"
-            required
-            autocomplete="username" />
-        </div>
+        <label for="email">Email</label
+        ><input
+          id="email"
+          type="email"
+          class="form-input"
+          placeholder="ban@email.com"
+          [(ngModel)]="form.email"
+          name="email"
+          required
+          email
+          autocomplete="email"
+        />
       </div>
-
       <div class="form-group">
-        <div class="label-row">
-          <label class="form-label">Mật khẩu</label>
-        </div>
-        <div class="input-wrap">
-          <span class="input-icon">🔒</span>
+        <label for="password">Mật khẩu</label>
+        <div class="password">
           <input
+            id="password"
             [type]="showPwd() ? 'text' : 'password'"
             class="form-input"
             placeholder="Nhập mật khẩu"
             [(ngModel)]="form.password"
             name="password"
             required
-            autocomplete="current-password" />
-          <span class="toggle-pwd" (click)="togglePwd()">
-            {{ showPwd() ? '🙈' : '👁️' }}
-          </span>
+            autocomplete="current-password"
+          /><button type="button" (click)="togglePwd()">{{ showPwd() ? 'Ẩn' : 'Hiện' }}</button>
         </div>
       </div>
-
-      <button type="submit" class="btn-submit" [disabled]="isLoading()">
-        @if (isLoading()) {
-          <span>⏳ Đang xác thực...</span>
-        } @else {
-          <span>ĐĂNG NHẬP VÀO HỆ THỐNG</span>
-        }
+      <button class="submit" type="submit" [disabled]="isLoading() || f.invalid">
+        {{ isLoading() ? 'Đang đăng nhập…' : 'Đăng nhập' }}
       </button>
-
-      <div class="auth-footer">
-        <span>Chưa có tài khoản? </span>
-        <a routerLink="/register" class="switch-link">Đăng ký thành viên mới</a>
-      </div>
+      <p class="footer">
+        Chưa có tài khoản? <a routerLink="/register">Tạo tài khoản khách hàng</a>
+      </p>
     </form>
   </div>
-</div>
+</section>

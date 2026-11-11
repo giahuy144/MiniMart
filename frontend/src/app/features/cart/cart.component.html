@@ -1,0 +1,65 @@
+<section class="cart-page">
+  <a routerLink="/products" class="back-link">← Tiếp tục mua sắm</a>
+  <div class="page-title">
+    <div>
+      <p class="eyebrow">Đơn hàng của bạn</p>
+      <h1>Giỏ hàng</h1>
+    </div>
+    <span>{{ cart.itemCount() }} sản phẩm</span>
+  </div>
+  @if (cart.items().length) {
+    <div class="cart-layout">
+      <div class="cart-items">
+        @for (i of cart.items(); track i.id) {
+          <article class="cart-item">
+            <div class="item-art" [class]="i.tone">{{ i.mark }}</div>
+            <div class="item-details">
+              <p>{{ i.category }} · {{ i.unit }}</p>
+              <h2>{{ i.name }}</h2>
+              <strong>{{ i.price | currency: 'VND' : 'symbol' : '1.0-0' }}</strong>
+            </div>
+            <div class="item-controls">
+              <div class="quantity">
+                <button
+                  type="button"
+                  (click)="cart.setQuantity(i.id, i.quantity - 1)"
+                  aria-label="Giảm số lượng"
+                >
+                  −</button
+                ><span>{{ i.quantity }}</span
+                ><button
+                  type="button"
+                  (click)="cart.setQuantity(i.id, i.quantity + 1)"
+                  aria-label="Tăng số lượng"
+                >
+                  +
+                </button>
+              </div>
+              <button class="remove" type="button" (click)="cart.remove(i.id)">Xóa</button>
+            </div>
+          </article>
+        }
+      </div>
+      <aside class="summary">
+        <h2>Tóm tắt đơn hàng</h2>
+        <div>
+          <span>Tạm tính</span
+          ><strong>{{ cart.subtotal() | currency: 'VND' : 'symbol' : '1.0-0' }}</strong>
+        </div>
+        <div><span>Phí giao hàng</span><span>Tính khi đặt hàng</span></div>
+        <div class="total">
+          <span>Tổng cộng</span
+          ><strong>{{ cart.subtotal() | currency: 'VND' : 'symbol' : '1.0-0' }}</strong>
+        </div>
+        <button disabled>Đặt hàng</button>
+        <p>Thông tin giao nhận và thanh toán sẽ được bổ sung trong bước đặt hàng.</p>
+      </aside>
+    </div>
+  } @else {
+    <div class="empty">
+      <h2>Giỏ hàng đang trống</h2>
+      <p>Chọn vài món quen thuộc để bắt đầu đơn hàng của bạn.</p>
+      <a routerLink="/products">Xem sản phẩm</a>
+    </div>
+  }
+</section>

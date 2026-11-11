@@ -1,40 +1,97 @@
-# Script khởi chạy toàn bộ 8 services của hệ thống MiniMart SOA
+param(
+    [ValidateSet("MySql", "InMemory")]
+    [string]$DatabaseProvider = "MySql",
+    [int]$StartupTimeoutSeconds = 30
+)
 
-Write-Host "==========================================================" -ForegroundColor Cyan
-Write-Host "   KHOI DONG HE THONG MINIMART BACKEND (SOA ARCHITECTURE) " -ForegroundColor Cyan
-Write-Host "==========================================================" -ForegroundColor Cyan
-
+$ErrorActionPreference = "Stop"
 $services = @(
-    @{ Name = "MiniMart API Gateway"; Path = "src/ApiGateway"; Port = 5000 },
-    @{ Name = "Auth / User Service"; Path = "src/AuthService"; Port = 5001 },
+    @{ Name = "API Gateway"; Path = "src/ApiGateway"; Port = 5000 },
+    @{ Name = "Auth Service"; Path = "src/AuthService"; Port = 5001 },
     @{ Name = "Product Service"; Path = "src/ProductService"; Port = 5002 },
     @{ Name = "Inventory Service"; Path = "src/InventoryService"; Port = 5003 },
     @{ Name = "Promotion Service"; Path = "src/PromotionService"; Port = 5004 },
-    @{ Name = "Order / Sales Service"; Path = "src/OrderService"; Port = 5005 },
+    @{ Name = "Order Service"; Path = "src/OrderService"; Port = 5005 },
     @{ Name = "Customer Service"; Path = "src/CustomerService"; Port = 5006 },
     @{ Name = "Report Service"; Path = "src/ReportService"; Port = 5007 }
 )
 
-foreach ($s in $services) {
-    $listener = Get-NetTCPConnection -LocalPort $s.Port -State Listen -ErrorAction SilentlyContinue | Select-Object -First 1
-    if ($listener) {
-        $owner = Get-Process -Id $listener.OwningProcess -ErrorAction SilentlyContinue
-        $ownerName = if ($owner) { $owner.ProcessName } else { "PID $($listener.OwningProcess)" }
-        Write-Host "Port $($s.Port) is already in use by $ownerName; skipping $($s.Name)." -ForegroundColor Yellow
-        continue
+function Test-LocalPort([int]$Port) {
+    $client = New-Object System.Net.Sockets.TcpClient
+    try {
+        $connect = $client.BeginConnect("127.0.0.1", $Port, $null, $null)
+        return $connect.AsyncWaitHandle.WaitOne(250) -and $client.Connected
+    } catch {
+        return $false
+    } finally {
+        $client.Close()
     }
-
-    Write-Host "Dang khoi chay $($s.Name) tai http://localhost:$($s.Port)..." -ForegroundColor Green
-    Start-Process powershell -ArgumentList "-NoExit", "-Command", "cd $(Join-Path $PSScriptRoot $s.Path); dotnet run"
 }
 
-Write-Host "`nDa xu ly danh sach service; cac cong dang duoc su dung da duoc bo qua." -ForegroundColor Yellow
-Write-Host "API Gateway chay tai: http://localhost:5000" -ForegroundColor Cyan
-Write-Host "Swagger docs cua tung service:" -ForegroundColor Cyan
-Write-Host " - AuthService:       http://localhost:5001/swagger"
-Write-Host " - ProductService:    http://localhost:5002/swagger"
-Write-Host " - InventoryService:  http://localhost:5003/swagger"
-Write-Host " - PromotionService:  http://localhost:5004/swagger"
-Write-Host " - OrderService:      http://localhost:5005/swagger"
-Write-Host " - CustomerService:   http://localhost:5006/swagger"
-Write-Host " - ReportService:     http://localhost:5007/swagger"
+if ($DatabaseProvider -eq "MySql") {
+    $mysql = New-Object System.Net.Sockets.TcpClient
+    try {
+        $connect = $mysql.BeginConnect("127.0.0.1", 3306, $null, $null)
+        $mysqlReady = $connect.AsyncWaitHandle.WaitOne(1200) -and $mysql.Connected
+        if ($mysqlReady) { $mysql.EndConnect($connect) }
+    } catch {
+        $mysqlReady = $false
+    } finally {
+        $mysql.Close()
+    }
+
+    if (-not $mysqlReady) {
+        Write-Error "MySQL khong mo tai 127.0.0.1:3306. Hay bat MySQL hoac chay: .\run-backend.ps1 -DatabaseProvider InMemory"
+        exit 1
+    }
+}
+
+$logDirectory = Join-Path $PSScriptRoot "logs"
+New-Item -ItemType Directory -Path $logDirectory -Force | Out-Null
+$previousProvider = $env:Database__Provider
+
+try {
+    $env:Database__Provider = $DatabaseProvider
+    foreach ($service in $services) {
+        if (Test-LocalPort $service.Port) {
+            Write-Host "Port $($service.Port) da co service lang nghe; bo qua $($service.Name)." -ForegroundColor Yellow
+            continue
+        }
+
+        $workingDirectory = Join-Path $PSScriptRoot $service.Path
+        $stdout = Join-Path $logDirectory "$($service.Port)-stdout.log"
+        $stderr = Join-Path $logDirectory "$($service.Port)-stderr.log"
+        $process = Start-Process -FilePath "dotnet" -ArgumentList "run" -WorkingDirectory $workingDirectory -WindowStyle Hidden -RedirectStandardOutput $stdout -RedirectStandardError $stderr -PassThru
+        Write-Host "Da khoi chay $($service.Name) (port $($service.Port), PID $($process.Id))."
+    }
+}
+finally {
+    if ($null -eq $previousProvider) {
+        Remove-Item Env:Database__Provider -ErrorAction SilentlyContinue
+    } else {
+        $env:Database__Provider = $previousProvider
+    }
+}
+
+$deadline = (Get-Date).AddSeconds($StartupTimeoutSeconds)
+do {
+    $pending = @($services | Where-Object { -not (Test-LocalPort $_.Port) })
+    if ($pending.Count -eq 0) { break }
+    Start-Sleep -Milliseconds 500
+} while ((Get-Date) -lt $deadline)
+
+$failed = @($services | Where-Object { -not (Test-LocalPort $_.Port) })
+if ($failed.Count -eq 0) {
+    Write-Host "Tat ca 8 service dang lang nghe." -ForegroundColor Green
+} else {
+    Write-Host "Chua san sang: $(( $failed | ForEach-Object { "$($_.Name) : $($_.Port)" }) -join ', ')" -ForegroundColor Red
+    Write-Host "Xem log tai: $logDirectory" -ForegroundColor Yellow
+    exit 1
+}
+
+if ($DatabaseProvider -eq "InMemory") {
+    Write-Host "Dang dung InMemory: du lieu seed dung de test va se mat khi dong service." -ForegroundColor Yellow
+}
+Write-Host "Gateway: http://localhost:5000"
+Write-Host "Logs: $logDirectory"
+

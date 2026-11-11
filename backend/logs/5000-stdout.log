@@ -1,0 +1,170 @@
+Using launch settings from D:\SOA\MiniMart\backend\src\ApiGateway\Properties\launchSettings.json...
+Building...
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5000
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: D:\SOA\MiniMart\backend\src\ApiGateway
+warn: Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware[0]
+      requestId: 0HNPV8CD1I6FR:00000001, previousRequestId: No PreviousRequestId, message: 'DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.'
+warn: Ocelot.Responder.Middleware.ResponderMiddleware[0]
+      requestId: 0HNPV8CD1I6FR:00000001, previousRequestId: No PreviousRequestId, message: 'Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6FS:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6FS:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6FS:00000001, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6FS:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6FT:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/products/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6FT:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/products'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6FT:00000001, previousRequestId: No PreviousRequestId, message: '/api/products/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6FT:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5002/api/products.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6FU:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6FU:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6FU:00000001, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6FU:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6FV:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/products/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6FV:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/products'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6FV:00000001, previousRequestId: No PreviousRequestId, message: '/api/products/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6FV:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5002/api/products.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6G0:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/categories/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6G0:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/categories'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6G0:00000001, previousRequestId: No PreviousRequestId, message: '/api/categories/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6G0:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5002/api/categories.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6G1:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/suppliers/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6G1:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/suppliers'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6G1:00000001, previousRequestId: No PreviousRequestId, message: '/api/suppliers/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6G1:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5002/api/suppliers.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6G2:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/inventory/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6G2:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/inventory/stock'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6G2:00000001, previousRequestId: No PreviousRequestId, message: '/api/inventory/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6G2:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5003/api/inventory/stock.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6G3:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/promotions/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6G3:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/promotions'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6G3:00000001, previousRequestId: No PreviousRequestId, message: '/api/promotions/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6G3:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5004/api/promotions.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6G4:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/orders/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6G4:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/orders'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6G4:00000001, previousRequestId: No PreviousRequestId, message: '/api/orders/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6G4:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5005/api/orders.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6G5:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/customers/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6G5:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/customers'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6G5:00000001, previousRequestId: No PreviousRequestId, message: '/api/customers/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6G5:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5006/api/customers.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6G6:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/reports/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6G6:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/reports/revenue'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6G6:00000001, previousRequestId: No PreviousRequestId, message: '/api/reports/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6G6:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5007/api/reports/revenue.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6G7:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/reports/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6G7:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/reports/best-selling'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6G7:00000001, previousRequestId: No PreviousRequestId, message: '/api/reports/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6G7:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5007/api/reports/best-selling.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6G8:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/reports/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6G8:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/reports/inventory-status'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6G8:00000001, previousRequestId: No PreviousRequestId, message: '/api/reports/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6G8:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5007/api/reports/inventory-status.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6G9:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6G9:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6G9:00000001, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6G9:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6GA:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/customers/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6GA:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/customers'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6GA:00000001, previousRequestId: No PreviousRequestId, message: '/api/customers/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6GA:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5006/api/customers.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6GB:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/reports/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6GB:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/reports/revenue'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6GB:00000001, previousRequestId: No PreviousRequestId, message: '/api/reports/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6GB:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5007/api/reports/revenue.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6GC:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/reports/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6GC:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/reports/best-selling'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6GC:00000001, previousRequestId: No PreviousRequestId, message: '/api/reports/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6GC:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5007/api/reports/best-selling.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6GD:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/reports/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6GD:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/reports/inventory-status'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6GD:00000001, previousRequestId: No PreviousRequestId, message: '/api/reports/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6GD:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5007/api/reports/inventory-status.'
+warn: Ocelot.DownstreamRouteFinder.Middleware.DownstreamRouteFinderMiddleware[0]
+      requestId: 0HNPV8CD1I6GK:00000001, previousRequestId: No PreviousRequestId, message: 'DownstreamRouteFinderMiddleware setting pipeline errors. IDownstreamRouteFinder returned Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET.'
+warn: Ocelot.Responder.Middleware.ResponderMiddleware[0]
+      requestId: 0HNPV8CD1I6GK:00000001, previousRequestId: No PreviousRequestId, message: 'Error Code: UnableToFindDownstreamRouteError Message: Failed to match Route configuration for upstream path: /, verb: GET. errors found in ResponderMiddleware. Setting error response for request path:/, request method: GET'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6GO:00000002, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6GO:00000002, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/register'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6GO:00000002, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6GO:00000002, previousRequestId: No PreviousRequestId, message: '201 (Created) status code of request URI: http://localhost:5001/api/auth/register.'

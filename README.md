@@ -167,10 +167,10 @@ cd D:\SOA\MiniMart\backend
 1. **Cài đặt thư viện dependencies (chỉ thực hiện ở lần đầu tiên):**
    ```powershell
    cd D:\SOA\MiniMart\frontend
-   npm install
+   np
    ```
 
-2. **Khởi chạy Development Server:**
+2. **Khởi chạy Devem installlopment Server:**
    ```powershell
    npm start
    # hoặc:

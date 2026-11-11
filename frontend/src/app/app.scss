@@ -2,112 +2,85 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-
+}
+.app-navbar {
+  display: flex;
+  min-height: 72px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 max(24px, calc((100vw - 1180px) / 2));
+  background: #fff;
+  border-bottom: 1px solid #e3e9e3;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #24352a;
+  font:
+    600 21px Georgia,
+    serif;
+}
+.brand-mark {
+  display: grid;
+  width: 34px;
+  height: 34px;
+  place-items: center;
+  background: #2f6744;
+  color: white;
+  font:
+    20px Georgia,
+    serif;
+}
+nav,
+.account {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+nav a,
+.account a {
+  color: #647168;
+  font-size: 13px;
+}
+.active,
+nav a:hover {
+  color: #2f6744;
+}
+nav b {
+  padding: 4px 6px;
+  background: #e8f1e9;
+  color: #2f6744;
+}
+.account {
+  font-size: 13px;
+  color: #647168;
+}
+.account button,
+.account > a:last-child {
+  padding: 10px 13px;
+  border: 0;
+  background: #2f6744;
+  color: #fff;
+  cursor: pointer;
+}
+.app-root main {
+  flex: 1;
+  background: #f7f8f5;
+}
+@media (max-width: 780px) {
   .app-navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #0f172a;
-    padding: 12px 28px;
-    border-bottom: 1px solid #1e293b;
-
-    .nav-left {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-
-      .logo-circle {
-        width: 36px;
-        height: 36px;
-        background: linear-gradient(135deg, #10b981, #047857);
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #ffffff;
-        font-weight: 800;
-        font-size: 18px;
-      }
-
-      .app-titles {
-        display: flex;
-        flex-direction: column;
-
-        .app-name {
-          color: #ffffff;
-          font-weight: 800;
-          font-size: 16px;
-          letter-spacing: -0.5px;
-        }
-
-        .app-sub {
-          color: #94a3b8;
-          font-size: 11px;
-        }
-      }
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 6px;
-      background: #1e293b;
-      padding: 4px;
-      border-radius: 10px;
-
-      .nav-item {
-        padding: 8px 16px;
-        border-radius: 6px;
-        font-size: 13px;
-        font-weight: 600;
-        color: #94a3b8;
-        transition: all 0.2s ease;
-
-        &.active, &:hover {
-          background: #10b981;
-          color: #ffffff;
-        }
-      }
-    }
-
-    .nav-user {
-      display: flex;
-      gap: 10px;
-      align-items: center;
-
-      .auth-btn {
-        padding: 8px 16px;
-        border-radius: 8px;
-        font-size: 13px;
-        font-weight: 700;
-        cursor: pointer;
-        transition: all 0.2s ease;
-
-        &.btn-login {
-          background: transparent;
-          color: #cbd5e1;
-          border: 1px solid #475569;
-
-          &.active, &:hover {
-            color: #ffffff;
-            border-color: #10b981;
-          }
-        }
-
-        &.btn-register {
-          background: #10b981;
-          color: #ffffff;
-          border: 1px solid #10b981;
-
-          &:hover {
-            background: #047857;
-          }
-        }
-      }
-    }
+    flex-wrap: wrap;
+    padding: 14px 18px;
   }
-
-  .app-content {
-    flex: 1;
-    background: #f8fafc;
+  nav {
+    order: 3;
+    width: 100%;
+    gap: 16px;
+    overflow: auto;
+  }
+  .account span {
+    display: none;
   }
 }

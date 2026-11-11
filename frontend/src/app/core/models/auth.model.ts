@@ -1,17 +1,14 @@
 export interface LoginRequest {
-  username: string;
+  email: string;
   password: string;
 }
-
 export interface RegisterRequest {
   username: string;
   password: string;
   fullName: string;
   email: string;
   phoneNumber: string;
-  role?: string;
 }
-
 export interface AuthResponse {
   token: string;
   userId: string;
@@ -22,7 +19,6 @@ export interface AuthResponse {
   role: string;
   expiresAt: string;
 }
-
 export interface UserInfo {
   id: string;
   username: string;

@@ -1,24 +1,23 @@
 @use 'app/shared/design-tokens.scss';
-
 :root {
-  --font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --font-family: 'Aptos', 'Segoe UI', system-ui, sans-serif;
+  --font-mono: ui-monospace, monospace;
 }
-
 body {
   margin: 0;
-  padding: 0;
   font-family: var(--font-family);
-  background-color: #f8fafc;
-  color: #0f172a;
+  background: #f7f8f5;
+  color: #202a24;
   -webkit-font-smoothing: antialiased;
 }
-
 * {
   box-sizing: border-box;
 }
-
 a {
   text-decoration: none;
   color: inherit;
+}
+button,
+input {
+  font: inherit;
 }

@@ -1,84 +1,64 @@
-<div class="product-page">
-  <!-- Topbar / Search & Filter -->
-  <header class="catalog-header">
-    <div class="search-container">
-      <span class="search-icon">🔍</span>
-      <input type="text" placeholder="Tìm theo tên sản phẩm, barcode, SKU..." class="search-input" />
-      <button class="btn-filter">Lọc nâng cao</button>
+<section class="store-page">
+  <div class="store-intro">
+    <div>
+      <p class="eyebrow">Mua sắm hằng ngày</p>
+      <h1>Ghé chợ, chọn món bạn cần.</h1>
+      <p class="intro-copy">Sản phẩm thiết yếu cho căn bếp và gia đình, gọn trong một lần mua.</p>
     </div>
-    <div class="category-pills">
-      <button class="pill active">Tất cả</button>
-      <button class="pill">Thực phẩm tươi</button>
-      <button class="pill">Đồ uống</button>
-      <button class="pill">Đồ ăn liền</button>
-      <button class="pill">Gia vị & Khô</button>
-      <button class="pill">Hóa mỹ phẩm</button>
+    <a class="cart-shortcut" routerLink="/cart"
+      >Giỏ hàng <span class="cart-count">{{ cart.itemCount() }}</span></a
+    >
+  </div>
+  <div class="catalog-tools">
+    <label class="search-box"
+      ><span class="search-mark" aria-hidden="true"></span
+      ><input
+        type="search"
+        [ngModel]="search()"
+        (ngModelChange)="search.set($event)"
+        placeholder="Tìm sản phẩm..."
+        aria-label="Tìm sản phẩm"
+    /></label>
+    <div class="category-list">
+      @for (c of categories; track c) {
+        <button
+          type="button"
+          class="category-button"
+          [class.selected]="selectedCategory() === c"
+          (click)="selectedCategory.set(c)"
+        >
+          {{ c }}
+        </button>
+      }
     </div>
-  </header>
-
-  <!-- Product Grid -->
-  <section class="product-grid">
-    <div class="product-card">
-      <div class="card-badge sale">-10%</div>
-      <div class="card-media">🥛</div>
-      <div class="card-info">
-        <span class="category-label">Đồ uống / Sữa tươi</span>
-        <h3 class="product-title">Sữa tươi tiệt trùng Vinamilk 100% 1L</h3>
-        <span class="barcode-tag">Barcode: 8934567890123</span>
-        <div class="card-footer">
-          <div class="price-box">
-            <span class="price-current">36.000₫</span>
-            <span class="price-old">40.000₫</span>
-          </div>
-          <button class="btn-cart">+ Thêm vào giỏ</button>
+  </div>
+  <div class="section-heading">
+    <h2>Sản phẩm hôm nay</h2>
+    <span>{{ filteredProducts().length }} sản phẩm</span>
+  </div>
+  <div class="product-grid">
+    @for (p of filteredProducts(); track p.id) {
+      <article class="product-card">
+        <div class="product-art" [class]="p.tone">
+          <span>{{ p.mark }}</span
+          ><small>{{ p.unit }}</small>
         </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="card-media">🍞</div>
-      <div class="card-info">
-        <span class="category-label">Bánh tươi</span>
-        <h3 class="product-title">Bánh mì hoa cúc Harrys Pháp 500g</h3>
-        <span class="barcode-tag">Barcode: 3228857000189</span>
-        <div class="card-footer">
-          <div class="price-box">
-            <span class="price-current">125.000₫</span>
+        <div class="product-copy">
+          <p class="product-category">{{ p.category }}</p>
+          <h3>{{ p.name }}</h3>
+          <div class="product-buy-row">
+            <div>
+              <strong>{{ p.price | currency: 'VND' : 'symbol' : '1.0-0' }}</strong
+              ><small>{{ p.unit }}</small>
+            </div>
+            <button class="add-button" type="button" (click)="addToCart(p)">
+              {{ addedProduct() === p.id ? 'Đã thêm' : 'Thêm +' }}
+            </button>
           </div>
-          <button class="btn-cart">+ Thêm vào giỏ</button>
         </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="card-media">🍜</div>
-      <div class="card-info">
-        <span class="category-label">Đồ ăn liền</span>
-        <h3 class="product-title">Mì Hảo Hảo tôm chua cay (Thùng 30 gói)</h3>
-        <span class="barcode-tag">Barcode: 8934822001192</span>
-        <div class="card-footer">
-          <div class="price-box">
-            <span class="price-current">118.000₫</span>
-          </div>
-          <button class="btn-cart">+ Thêm vào giỏ</button>
-        </div>
-      </div>
-    </div>
-
-    <div class="product-card">
-      <div class="card-badge low-stock">Sắp hết</div>
-      <div class="card-media">🧃</div>
-      <div class="card-info">
-        <span class="category-label">Nước giải khát</span>
-        <h3 class="product-title">Coca-Cola Không Đường Lon 320ml</h3>
-        <span class="barcode-tag">Barcode: 8935049500547</span>
-        <div class="card-footer">
-          <div class="price-box">
-            <span class="price-current">10.500₫</span>
-          </div>
-          <button class="btn-cart">+ Thêm vào giỏ</button>
-        </div>
-      </div>
-    </div>
-  </section>
-</div>
+      </article>
+    } @empty {
+      <p class="empty-results">Chưa tìm thấy sản phẩm phù hợp.</p>
+    }
+  </div>
+</section>

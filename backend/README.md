@@ -64,15 +64,10 @@ Sáu service dữ liệu mặc định dùng MySQL tại `127.0.0.1:3306`, lần
 Các seed mẫu có sẵn được giữ nguyên và được tạo khi service khởi tạo database trống. Để chạy thử bằng InMemory thay vì MySQL, mở PowerShell tại `backend` và chạy:
 
 ```powershell
-$env:Database__Provider = "InMemory"
-.\run-backend.ps1
+.\run-backend.ps1 -DatabaseProvider InMemory
 ```
 
-Xóa biến sau khi dừng backend để lần chạy tiếp theo trở về MySQL:
-
-```powershell
-Remove-Item Env:Database__Provider
-```
+Dữ liệu InMemory chỉ tồn tại khi các service còn chạy. Script ghi log stdout/stderr theo cổng trong thư mục `backend/logs`; nếu cổng đã được service khác sử dụng, script sẽ giữ nguyên tiến trình đó và báo provider chỉ áp dụng cho service mới.
 ### Cách 2: Chạy riêng từng service
 ```powershell
 cd backend/src/ApiGateway
