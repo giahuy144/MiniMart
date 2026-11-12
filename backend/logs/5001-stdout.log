@@ -13,3 +13,477 @@ info: Microsoft.Hosting.Lifetime[0]
       Hosting environment: Development
 info: Microsoft.Hosting.Lifetime[0]
       Content root path: D:\SOA\MiniMart\backend\src\AuthService
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (41ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__email_0='?' (Size = 255)], CommandType='Text', CommandTimeout='30']
+      SELECT `u`.`Id`, `u`.`CreatedAt`, `u`.`Email`, `u`.`FullName`, `u`.`IsActive`, `u`.`PasswordHash`, `u`.`PhoneNumber`, `u`.`Role`, `u`.`Username`
+      FROM `Users` AS `u`
+      WHERE LOWER(`u`.`Email`) = @__email_0
+      LIMIT 1

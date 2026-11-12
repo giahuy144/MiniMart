@@ -1,105 +1,63 @@
 <div class="inventory-page">
   <div class="header-actions">
     <div>
-      <h2 class="page-title">Quản Lý Tồn Kho & Cảnh Báo Sắp Hết (TK01 & TK06)</h2>
-      <p class="page-subtitle">Kiểm soát định mức tồn tối thiểu, thẻ kho và lập phiếu nhập theo chuẩn Inventory Service</p>
+      <h2 class="page-title">Quản lý tồn kho & cảnh báo sắp hết</h2>
+      <p class="page-subtitle">Theo dõi định mức tồn tối thiểu và tạo phiếu nhập hàng.</p>
     </div>
-    <div class="action-buttons">
-      <button class="btn btn-outline">Kiểm kê kho (TK05)</button>
-      <button class="btn btn-primary">+ Tạo phiếu nhập hàng (TK02)</button>
+    <div class="action-buttons" id="stock-intake">
+      <button class="btn btn-outline" type="button">Kiểm kê kho</button>
+      <button class="btn btn-primary" type="button" (click)="openReceipt()">+ Tạo phiếu nhập hàng</button>
     </div>
   </div>
 
-  <!-- KPI Cards -->
   <div class="kpi-grid">
-    <div class="kpi-card">
-      <span class="kpi-label">Tổng số mặt hàng</span>
-      <span class="kpi-value">1.420</span>
-      <span class="kpi-sub">Đang lưu hành trong kho</span>
-    </div>
-    <div class="kpi-card">
-      <span class="kpi-label">Mặt hàng an toàn</span>
-      <span class="kpi-value text-emerald">1.392</span>
-      <span class="kpi-sub">> Mức tồn tối thiểu</span>
-    </div>
-    <div class="kpi-card border-warning">
-      <span class="kpi-label text-warning">Cảnh báo sắp hết</span>
-      <span class="kpi-value text-warning">28</span>
-      <span class="kpi-sub">Cần nhập thêm gấp</span>
-    </div>
-    <div class="kpi-card border-danger">
-      <span class="kpi-label text-danger">Hết hàng</span>
-      <span class="kpi-value text-danger">2</span>
-      <span class="kpi-sub">Tồn kho bằng 0</span>
-    </div>
+    <div class="kpi-card"><span class="kpi-label">Mặt hàng đang theo dõi</span><span class="kpi-value">{{ receivedCount() }}</span><span class="kpi-sub">Sản phẩm trong danh sách</span></div>
+    <div class="kpi-card"><span class="kpi-label">Tồn kho an toàn</span><span class="kpi-value text-emerald">{{ safeCount() }}</span><span class="kpi-sub">Vượt mức tồn tối thiểu</span></div>
+    <div class="kpi-card border-warning"><span class="kpi-label text-warning">Sắp hết hàng</span><span class="kpi-value text-warning">{{ lowCount() }}</span><span class="kpi-sub">Cần nhập thêm</span></div>
+    <div class="kpi-card border-danger"><span class="kpi-label text-danger">Hết hàng</span><span class="kpi-value text-danger">{{ outCount() }}</span><span class="kpi-sub">Tồn kho bằng 0</span></div>
   </div>
 
-  <!-- Table Filter & Search -->
-  <div class="filter-bar">
-    <input type="text" placeholder="Tìm theo tên sản phẩm, mã SKU..." class="search-input" />
-    <select class="filter-select">
-      <option>Tất cả trạng thái</option>
-      <option selected>Chỉ hàng sắp hết (<= Mức tối thiểu)</option>
-      <option>Hết hàng (= 0)</option>
-      <option>Đủ tồn kho</option>
-    </select>
-  </div>
+  <div class="filter-bar"><input type="text" placeholder="Tìm theo tên sản phẩm, mã SKU..." class="search-input" /><select class="filter-select"><option>Tất cả trạng thái</option><option>Chỉ hàng sắp hết</option><option>Hết hàng</option><option>Đủ tồn kho</option></select></div>
 
-  <!-- Data Table -->
-  <div class="table-card">
-    <table class="inventory-table">
-      <thead>
-        <tr>
-          <th>Mã SKU / Barcode</th>
-          <th>Tên hàng hóa</th>
-          <th>Danh mục</th>
-          <th class="text-right">Tồn thực tế</th>
-          <th class="text-right">Tồn tối thiểu (TK09)</th>
-          <th>Trạng thái cảnh báo</th>
-          <th>Cập nhật lần cuối</th>
-          <th class="text-center">Thao tác</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr class="row-warning">
-          <td class="font-mono">SKU-MILK-01</td>
-          <td class="font-bold">Sữa tươi tiệt trùng Vinamilk 100% 1L</td>
-          <td>Đồ uống</td>
-          <td class="text-right font-mono font-bold text-warning">18 hộp</td>
-          <td class="text-right font-mono">20 hộp</td>
-          <td><span class="badge badge-warning">⚠️ Sắp hết hàng</span></td>
-          <td>01/11/2026 21:15</td>
-          <td class="text-center">
-            <button class="btn-action">Lịch sử thẻ kho</button>
-            <button class="btn-action-primary">Nhập kho</button>
-          </td>
-        </tr>
-        <tr>
-          <td class="font-mono">SKU-NOOD-05</td>
-          <td class="font-bold">Mì gói Hảo Hảo tôm chua cay</td>
-          <td>Đồ ăn liền</td>
-          <td class="text-right font-mono font-bold text-emerald">145 gói</td>
-          <td class="text-right font-mono">50 gói</td>
-          <td><span class="badge badge-success">✓ An toàn</span></td>
-          <td>01/11/2026 19:40</td>
-          <td class="text-center">
-            <button class="btn-action">Lịch sử thẻ kho</button>
-          </td>
-        </tr>
-        <tr class="row-danger">
-          <td class="font-mono">SKU-WATER-02</td>
-          <td class="font-bold">Nước khoáng thiên nhiên Lavie 500ml</td>
-          <td>Đồ uống</td>
-          <td class="text-right font-mono font-bold text-danger">0 chai</td>
-          <td class="text-right font-mono">30 chai</td>
-          <td><span class="badge badge-danger">🛑 Hết hàng</span></td>
-          <td>01/11/2026 18:22</td>
-          <td class="text-center">
-            <button class="btn-action">Lịch sử thẻ kho</button>
-            <button class="btn-action-danger">+ Nhập khẩn cấp</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+  <div class="table-card"><table class="inventory-table">
+    <thead><tr><th>Mã SKU / Barcode</th><th>Tên hàng hóa</th><th>Danh mục</th><th class="text-right">Tồn thực tế</th><th class="text-right">Tồn tối thiểu</th><th>Trạng thái</th><th>Cập nhật lần cuối</th><th class="text-center">Thao tác</th></tr></thead>
+    <tbody>@for (item of items(); track item.id) {
+      <tr [class.row-warning]="item.quantity > 0 && item.quantity <= item.minimum" [class.row-danger]="item.quantity === 0">
+        <td class="font-mono">{{ item.sku }}</td><td class="font-bold">{{ item.name }}</td><td>{{ item.category }}</td>
+        <td class="text-right font-mono font-bold" [class.text-warning]="item.quantity > 0 && item.quantity <= item.minimum" [class.text-danger]="item.quantity === 0" [class.text-emerald]="item.quantity > item.minimum">{{ item.quantity }} {{ item.unit }}</td>
+        <td class="text-right font-mono">{{ item.minimum }} {{ item.unit }}</td>
+        <td>@if (item.quantity === 0) { <span class="badge badge-danger">Hết hàng</span> } @else if (item.quantity <= item.minimum) { <span class="badge badge-warning">Sắp hết hàng</span> } @else { <span class="badge badge-success">An toàn</span> }</td>
+        <td>{{ item.updatedAt }}</td><td class="text-center"><button class="btn-action" type="button">Lịch sử thẻ kho</button>
+          @if (item.quantity === 0) { <button class="btn-action-danger" type="button" (click)="openReceipt(item, true)">Nhập khẩn cấp</button> }
+          @else if (item.quantity <= item.minimum) { <button class="btn-action-primary" type="button" (click)="openReceipt(item)">Nhập kho</button> }
+          @else { <button class="btn-action" type="button" (click)="openReceipt(item)">Nhập kho</button> }
+        </td>
+      </tr>
+    } @empty { <tr><td colspan="8" class="empty-stock">Chưa có mặt hàng trong kho.</td></tr> }</tbody>
+  </table></div>
+
+  @if (receiptOpen()) {
+    <div class="dialog-backdrop" (click)="receiptOpen.set(false)">
+      <section class="receipt-dialog" role="dialog" aria-modal="true" aria-labelledby="receipt-title" (click)="$event.stopPropagation()">
+        <button class="dialog-close" type="button" aria-label="Đóng" (click)="receiptOpen.set(false)">×</button>
+        <p class="dialog-eyebrow">{{ urgentReceipt() ? 'NHẬP BỔ SUNG KHẨN CẤP' : 'QUẢN LÝ KHO' }}</p>
+        <h2 id="receipt-title">{{ urgentReceipt() ? 'Nhập khẩn cấp' : 'Tạo phiếu nhập hàng' }}</h2>
+        <p class="dialog-description">{{ urgentReceipt() ? 'Bổ sung tồn kho cho mặt hàng đang hết hàng.' : 'Chọn mặt hàng và khai báo số lượng nhập kho.' }}</p>
+        <form #receiptForm="ngForm" (ngSubmit)="submitReceipt()">
+          <label>Sản phẩm
+            <select name="productId" [ngModel]="selectedProductId()" (ngModelChange)="selectedProductId.set($event)" required>
+              <option value="" disabled>Chọn sản phẩm cần nhập</option>
+              @for (item of items(); track item.id) { <option [value]="item.id">{{ item.name }} — {{ item.sku }}</option> }
+            </select>
+          </label>
+          <label>Số lượng nhập
+            <div class="quantity-input"><input name="quantity" type="number" min="1" step="1" [ngModel]="quantityToReceive()" (ngModelChange)="quantityToReceive.set($event)" required /><span>{{ unitFor(selectedProductId()) }}</span></div>
+          </label>
+          <label>Nhà cung cấp<input name="supplier" [ngModel]="supplier()" (ngModelChange)="supplier.set($event)" placeholder="Nhập tên nhà cung cấp" /></label>
+          <label>Ghi chú<textarea name="note" rows="3" [ngModel]="receiptNote()" (ngModelChange)="receiptNote.set($event)" placeholder="Số chứng từ hoặc ghi chú thêm"></textarea></label>
+          <div class="dialog-actions"><button type="button" class="cancel-button" (click)="receiptOpen.set(false)">Hủy</button><button type="submit" class="save-receipt" [disabled]="receiptForm.invalid || !selectedProductId()">{{ urgentReceipt() ? 'Xác nhận nhập khẩn cấp' : 'Lưu phiếu nhập' }}</button></div>
+        </form>
+      </section>
+    </div>
+  }
 </div>

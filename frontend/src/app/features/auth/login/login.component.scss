@@ -92,3 +92,8 @@
   color: #2f6744;
   font-weight: 650;
 }
+.demo-accounts { margin-top: 20px; padding-top: 14px; border-top: 1px solid #e3e9e3; color: #647168; font-size: 12px; }
+.demo-accounts summary { cursor: pointer; font-weight: 650; }
+.demo-accounts div { display: flex; justify-content: space-between; gap: 12px; margin-top: 9px; }
+.demo-accounts code { color: #24352a; }
+.demo-accounts p { margin: 10px 0 0; }

@@ -31,10 +31,7 @@ export class LoginComponent {
       next: (r) => {
         this.isLoading.set(false);
         if (r.success) {
-          const role = r.data?.role;
-          if (role === 'Admin' || role === 'Stockkeeper') this.router.navigate(['/inventory']);
-          else if (role === 'Cashier') this.router.navigate(['/pos']);
-          else this.router.navigate(['/products']);
+          this.router.navigateByUrl(this.auth.homePathForRole(r.data?.role));
         } else this.errorMsg.set(r.message || 'Đăng nhập thất bại.');
       },
       error: (e) => {

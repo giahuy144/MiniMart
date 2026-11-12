@@ -5,9 +5,10 @@
       <h1>Ghé chợ, chọn món bạn cần.</h1>
       <p class="intro-copy">Sản phẩm thiết yếu cho căn bếp và gia đình, gọn trong một lần mua.</p>
     </div>
-    <a class="cart-shortcut" routerLink="/cart"
-      >Giỏ hàng <span class="cart-count">{{ cart.itemCount() }}</span></a
-    >
+    <div class="store-actions">
+      @if (isAdmin()) { <button class="admin-add-button" type="button" (click)="openAddForm()">+ Thêm sản phẩm</button> }
+      @if (auth.userRole() === 'Customer') { <a class="cart-shortcut" routerLink="/cart">Giỏ hàng <span class="cart-count">{{ cart.itemCount() }}</span></a> }
+    </div>
   </div>
   <div class="catalog-tools">
     <label class="search-box"
@@ -39,10 +40,10 @@
   <div class="product-grid">
     @for (p of filteredProducts(); track p.id) {
       <article class="product-card">
-        <div class="product-art" [class]="p.tone">
-          <span>{{ p.mark }}</span
-          ><small>{{ p.unit }}</small>
-        </div>
+        <button class="product-art product-image-button" [class]="'product-art product-image-button ' + p.tone" type="button" (click)="selectedProduct.set(p)" [attr.aria-label]="'Xem chi tiết ' + p.name">
+          @if (p.imageUrl) { <img [src]="p.imageUrl" [alt]="p.name" /> }
+          @else { <span>{{ p.mark }}</span><small>{{ p.unit }}</small> }
+        </button>
         <div class="product-copy">
           <p class="product-category">{{ p.category }}</p>
           <h3>{{ p.name }}</h3>
@@ -52,7 +53,7 @@
               ><small>{{ p.unit }}</small>
             </div>
             <button class="add-button" type="button" (click)="addToCart(p)">
-              {{ addedProduct() === p.id ? 'Đã thêm' : 'Thêm +' }}
+              {{ addedProduct() === p.id ? 'Đã thêm' : (auth.userRole() === 'Cashier' ? 'Thêm vào POS +' : 'Thêm +') }}
             </button>
           </div>
         </div>
@@ -61,4 +62,35 @@
       <p class="empty-results">Chưa tìm thấy sản phẩm phù hợp.</p>
     }
   </div>
+
+  @if (selectedProduct(); as product) {
+    <div class="modal-backdrop" (click)="selectedProduct.set(null)">
+      <section class="product-modal" role="dialog" aria-modal="true" aria-label="Chi tiết sản phẩm" (click)="$event.stopPropagation()">
+        <button class="modal-close" type="button" aria-label="Đóng" (click)="selectedProduct.set(null)">×</button>
+        <div class="detail-art" [class]="'detail-art ' + product.tone">
+          @if (product.imageUrl) { <img [src]="product.imageUrl" [alt]="product.name" /> } @else { <span>{{ product.mark }}</span><small>{{ product.unit }}</small> }
+        </div>
+        <p class="product-category">{{ product.category }}</p><h2>{{ product.name }}</h2>
+        <p class="detail-description">{{ product.description || 'Sản phẩm chất lượng được tuyển chọn cho nhu cầu mua sắm hằng ngày.' }}</p>
+        <div class="detail-footer"><strong>{{ product.price | currency: 'VND' : 'symbol' : '1.0-0' }}</strong><button class="add-button" type="button" (click)="addToCart(product)">{{ auth.userRole() === 'Cashier' ? 'Thêm vào đơn POS' : 'Thêm vào giỏ' }}</button></div>
+      </section>
+    </div>
+  }
+
+  @if (showAddForm()) {
+    <div class="modal-backdrop" (click)="showAddForm.set(false)">
+      <section class="product-modal add-product-modal" role="dialog" aria-modal="true" aria-label="Thêm sản phẩm" (click)="$event.stopPropagation()">
+        <button class="modal-close" type="button" aria-label="Đóng" (click)="showAddForm.set(false)">×</button>
+        <p class="eyebrow">QUẢN LÝ DANH MỤC</p><h2>Thêm sản phẩm</h2>
+        <form #productForm="ngForm" (ngSubmit)="saveProduct()">
+          <label>Tên sản phẩm<input name="name" [(ngModel)]="newProduct.name" required /></label>
+          <div class="form-row"><label>Danh mục<input name="category" [(ngModel)]="newProduct.category" required placeholder="Ví dụ: Đồ uống" /></label><label>Đơn vị<input name="unit" [(ngModel)]="newProduct.unit" required placeholder="Ví dụ: Chai 500ml" /></label></div>
+          <label>Giá bán (VNĐ)<input name="price" type="number" min="1" [(ngModel)]="newProduct.price" required /></label>
+          <label class="image-upload">Hình ảnh sản phẩm<input type="file" accept="image/*" (change)="onImageSelected($event)" />@if (imagePreview()) { <img class="image-preview" [src]="imagePreview()" alt="Ảnh xem trước sản phẩm" /> } @else { <span>Chọn ảnh từ thiết bị của bạn</span> }</label>
+          <label>Mô tả<textarea name="description" rows="3" [(ngModel)]="newProduct.description"></textarea></label>
+          <div class="form-actions"><button type="button" class="cancel-button" (click)="showAddForm.set(false)">Hủy</button><button class="admin-add-button" type="submit" [disabled]="productForm.invalid">Lưu sản phẩm</button></div>
+        </form>
+      </section>
+    </div>
+  }
 </section>

@@ -13,4 +13,14 @@ export class App {
     readonly auth: AuthService,
     readonly cart: CartService,
   ) {}
+
+  roleLabel(): string {
+    switch (this.auth.userRole()) {
+      case 'Admin': return 'Quản trị viên';
+      case 'Cashier': return 'Thu ngân';
+      case 'Stockkeeper': return 'Nhân viên kho';
+      case 'Customer': return 'Khách hàng';
+      default: return '';
+    }
+  }
 }

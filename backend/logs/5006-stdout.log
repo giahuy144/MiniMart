@@ -23,3 +23,21 @@ info: Microsoft.EntityFrameworkCore.Database.Command[20101]
       SELECT `c`.`Id`, `c`.`UserId`, `c`.`FullName`, `c`.`PhoneNumber`, `c`.`Email`, `c`.`Address`, `c`.`Points`, `c`.`TotalSpent`, `c`.`Tier`, `c`.`IsActive`, `c`.`CreatedAt`
       FROM `Customers` AS `c`
       ORDER BY `c`.`CreatedAt` DESC
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (24ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT `c`.`Id`, `c`.`Address`, `c`.`CreatedAt`, `c`.`Email`, `c`.`FullName`, `c`.`IsActive`, `c`.`PhoneNumber`, `c`.`Points`, `c`.`Tier`, `c`.`TotalSpent`, `c`.`UserId`
+      FROM `Customers` AS `c`
+      WHERE `c`.`UserId` = @__userId_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT `c`.`Id`, `c`.`Address`, `c`.`CreatedAt`, `c`.`Email`, `c`.`FullName`, `c`.`IsActive`, `c`.`PhoneNumber`, `c`.`Points`, `c`.`Tier`, `c`.`TotalSpent`, `c`.`UserId`
+      FROM `Customers` AS `c`
+      WHERE `c`.`UserId` = @__userId_0
+      LIMIT 1
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (1ms) [Parameters=[@__userId_0='?' (DbType = Guid)], CommandType='Text', CommandTimeout='30']
+      SELECT `c`.`Id`, `c`.`Address`, `c`.`CreatedAt`, `c`.`Email`, `c`.`FullName`, `c`.`IsActive`, `c`.`PhoneNumber`, `c`.`Points`, `c`.`Tier`, `c`.`TotalSpent`, `c`.`UserId`
+      FROM `Customers` AS `c`
+      WHERE `c`.`UserId` = @__userId_0
+      LIMIT 1

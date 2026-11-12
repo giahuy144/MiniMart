@@ -96,3 +96,16 @@ C:\Users\ASUS\.codex\visualizations\2026\11\10\01a1c35e-86d2-7013-a360-833b89de8
 C:\Users\ASUS\.codex\visualizations\2026\11\10\01a1c35e-86d2-7013-a360-833b89de887a\auth-build\AuthService.runtimeconfig.json
 C:\Users\ASUS\.codex\visualizations\2026\11\10\01a1c35e-86d2-7013-a360-833b89de887a\auth-build\AuthService.dll
 C:\Users\ASUS\.codex\visualizations\2026\11\10\01a1c35e-86d2-7013-a360-833b89de887a\auth-build\AuthService.pdb
+C:\Users\ASUS\OneDrive\เอกสาร\New project\backend-build-check\Debug\net9.0\appsettings.Development.json
+C:\Users\ASUS\OneDrive\เอกสาร\New project\backend-build-check\Debug\net9.0\appsettings.json
+C:\Users\ASUS\OneDrive\เอกสาร\New project\backend-build-check\Debug\net9.0\bin\Debug\net9.0\appsettings.Development.json
+C:\Users\ASUS\OneDrive\เอกสาร\New project\backend-build-check\Debug\net9.0\bin\Debug\net9.0\appsettings.json
+C:\Users\ASUS\OneDrive\เอกสาร\New project\backend-build-check\Debug\net9.0\bin\Debug\net9.0\AuthService.deps.json
+C:\Users\ASUS\OneDrive\เอกสาร\New project\backend-build-check\Debug\net9.0\bin\Debug\net9.0\AuthService.runtimeconfig.json
+C:\Users\ASUS\OneDrive\เอกสาร\New project\backend-build-check\Debug\net9.0\bin\Debug\net9.0\AuthService.staticwebassets.endpoints.json
+C:\Users\ASUS\OneDrive\เอกสาร\New project\backend-build-check\Debug\net9.0\AuthService.staticwebassets.endpoints.json
+C:\Users\ASUS\OneDrive\เอกสาร\New project\backend-build-check\Debug\net9.0\AuthService.exe
+C:\Users\ASUS\OneDrive\เอกสาร\New project\backend-build-check\Debug\net9.0\AuthService.deps.json
+C:\Users\ASUS\OneDrive\เอกสาร\New project\backend-build-check\Debug\net9.0\AuthService.runtimeconfig.json
+C:\Users\ASUS\OneDrive\เอกสาร\New project\backend-build-check\Debug\net9.0\AuthService.dll
+C:\Users\ASUS\OneDrive\เอกสาร\New project\backend-build-check\Debug\net9.0\AuthService.pdb

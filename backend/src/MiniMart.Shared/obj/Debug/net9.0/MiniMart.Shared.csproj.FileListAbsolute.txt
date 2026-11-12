@@ -14,3 +14,6 @@ D:\SOA\MiniMart\backend\src\MiniMart.Shared\obj\Debug\net9.0\MiniMart.Shared.sou
 C:\Users\ASUS\.codex\visualizations\2026\11\10\01a1c35e-86d2-7013-a360-833b89de887a\auth-build\MiniMart.Shared.deps.json
 C:\Users\ASUS\.codex\visualizations\2026\11\10\01a1c35e-86d2-7013-a360-833b89de887a\auth-build\MiniMart.Shared.dll
 C:\Users\ASUS\.codex\visualizations\2026\11\10\01a1c35e-86d2-7013-a360-833b89de887a\auth-build\MiniMart.Shared.pdb
+C:\Users\ASUS\OneDrive\เอกสาร\New project\backend-build-check\Debug\net9.0\MiniMart.Shared.deps.json
+C:\Users\ASUS\OneDrive\เอกสาร\New project\backend-build-check\Debug\net9.0\MiniMart.Shared.dll
+C:\Users\ASUS\OneDrive\เอกสาร\New project\backend-build-check\Debug\net9.0\MiniMart.Shared.pdb

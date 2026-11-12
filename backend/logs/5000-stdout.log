@@ -168,3 +168,779 @@ info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
       requestId: 0HNPV8CD1I6GO:00000002, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
 info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
       requestId: 0HNPV8CD1I6GO:00000002, previousRequestId: No PreviousRequestId, message: '201 (Created) status code of request URI: http://localhost:5001/api/auth/register.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HA:00000002, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HA:00000002, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HA:00000002, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HA:00000002, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000002, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000002, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000002, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000002, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000003, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000003, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000003, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000003, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000004, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000004, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000004, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000004, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000005, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000005, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000005, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000005, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000006, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000006, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000006, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000006, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000007, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000007, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000007, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000007, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000008, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000008, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000008, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000008, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000009, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000009, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000009, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:00000009, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:0000000A, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:0000000A, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:0000000A, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:0000000A, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:0000000B, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:0000000B, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:0000000B, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HE:0000000B, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HF:00000002, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HF:00000002, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HF:00000002, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HF:00000002, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000002, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000002, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000002, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000002, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000003, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000003, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000003, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000003, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000004, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000004, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000004, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000004, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000005, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000005, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000005, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000005, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000006, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000006, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000006, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000006, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000007, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000007, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000007, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000007, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000008, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000008, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000008, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000008, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000009, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000009, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000009, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:00000009, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:0000000A, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:0000000A, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:0000000A, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:0000000A, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:0000000C, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:0000000C, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:0000000C, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:0000000C, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:0000000E, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:0000000E, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:0000000E, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HG:0000000E, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:00000002, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:00000002, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:00000002, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:00000002, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:00000003, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:00000003, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:00000003, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:00000003, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:00000005, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:00000005, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:00000005, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:00000005, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:00000006, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:00000006, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:00000006, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:00000006, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:00000007, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:00000007, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:00000007, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:00000007, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:00000009, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:00000009, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:00000009, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:00000009, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:0000000A, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:0000000A, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:0000000A, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:0000000A, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:0000000B, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:0000000B, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:0000000B, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HH:0000000B, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HI:00000002, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HI:00000002, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HI:00000002, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HI:00000002, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000002, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000002, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000002, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000002, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000004, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000004, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000004, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000004, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000005, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000005, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000005, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000005, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000006, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000006, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000006, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000006, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000007, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000007, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000007, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000007, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000008, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000008, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000008, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000008, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000009, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000009, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000009, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:00000009, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:0000000A, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:0000000A, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:0000000A, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HM:0000000A, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:00000002, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:00000002, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:00000002, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:00000002, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:00000004, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:00000004, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:00000004, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:00000004, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:00000005, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:00000005, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:00000005, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:00000005, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:00000006, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:00000006, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:00000006, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:00000006, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:00000008, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:00000008, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:00000008, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:00000008, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:00000009, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:00000009, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:00000009, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:00000009, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:0000000A, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:0000000A, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:0000000A, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:0000000A, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:0000000B, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:0000000B, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:0000000B, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:0000000B, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:0000000D, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:0000000D, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:0000000D, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6HT:0000000D, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000002, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000002, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000002, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000002, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000004, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000004, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000004, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000004, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000005, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000005, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000005, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000005, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000006, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000006, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000006, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000006, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000007, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000007, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000007, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000007, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000008, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000008, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000008, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000008, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000009, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000009, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000009, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000009, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:0000000A, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:0000000A, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:0000000A, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:0000000A, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:0000000B, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:0000000B, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:0000000B, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:0000000B, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:0000000C, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:0000000C, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:0000000C, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:0000000C, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:0000000D, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:0000000D, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:0000000D, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:0000000D, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:0000000E, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:0000000E, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:0000000E, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:0000000E, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:0000000F, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:0000000F, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:0000000F, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:0000000F, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000011, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000011, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000011, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000011, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000012, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000012, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000012, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000012, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000013, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000013, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000013, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000013, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000014, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000014, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000014, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000014, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000015, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000015, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000015, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I1:00000015, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000002, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000002, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000002, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000002, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000003, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000003, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000003, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000003, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000004, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000004, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000004, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000004, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000005, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000005, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000005, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000005, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000006, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000006, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000006, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000006, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000007, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000007, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000007, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000007, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000008, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000008, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000008, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I5:00000008, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I6:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I6:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I6:00000001, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I6:00000001, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I7:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I7:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I7:00000001, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I7:00000001, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I8:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I8:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I8:00000001, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I8:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6I9:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6I9:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6I9:00000001, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6I9:00000001, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6IA:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6IA:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6IA:00000001, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6IA:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6IB:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6IB:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6IB:00000001, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6IB:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6IC:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6IC:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6IC:00000001, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6IC:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6ID:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6ID:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6ID:00000001, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6ID:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6IE:00000001, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6IE:00000001, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6IE:00000001, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6IE:00000001, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6II:00000002, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6II:00000002, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6II:00000002, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6II:00000002, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6IJ:00000002, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6IJ:00000002, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6IJ:00000002, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6IJ:00000002, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6IK:00000002, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6IK:00000002, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6IK:00000002, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6IK:00000002, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6IL:00000002, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6IL:00000002, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6IL:00000002, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+warn: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6IL:00000002, previousRequestId: No PreviousRequestId, message: '400 (Bad Request) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6IL:00000004, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6IL:00000004, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6IL:00000004, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6IL:00000004, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6IL:00000006, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/customers/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6IL:00000006, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/customers/by-user/44444444-4444-4444-4444-444444444444'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6IL:00000006, previousRequestId: No PreviousRequestId, message: '/api/customers/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6IL:00000006, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5006/api/customers/by-user/44444444-4444-4444-4444-444444444444.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6IL:00000008, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/orders/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6IL:00000008, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/orders'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6IL:00000008, previousRequestId: No PreviousRequestId, message: '/api/orders/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6IL:00000008, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5005/api/orders?customerId=1&page=1&pageSize=50.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6IM:00000002, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/customers/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6IM:00000002, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/customers/by-user/44444444-4444-4444-4444-444444444444'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6IM:00000002, previousRequestId: No PreviousRequestId, message: '/api/customers/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6IM:00000002, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5006/api/customers/by-user/44444444-4444-4444-4444-444444444444.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6IM:00000004, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/orders/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6IM:00000004, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/orders'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6IM:00000004, previousRequestId: No PreviousRequestId, message: '/api/orders/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6IM:00000004, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5005/api/orders?customerId=1&page=1&pageSize=50.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6IM:00000006, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/customers/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6IM:00000006, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/customers/by-user/44444444-4444-4444-4444-444444444444'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6IM:00000006, previousRequestId: No PreviousRequestId, message: '/api/customers/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6IM:00000006, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5006/api/customers/by-user/44444444-4444-4444-4444-444444444444.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6IM:00000008, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/orders/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6IM:00000008, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/orders'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6IM:00000008, previousRequestId: No PreviousRequestId, message: '/api/orders/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6IM:00000008, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5005/api/orders?customerId=1&page=1&pageSize=50.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6IN:00000002, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6IN:00000002, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6IN:00000002, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6IN:00000002, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6IO:00000002, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6IO:00000002, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6IO:00000002, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6IO:00000002, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5001/api/auth/login.'
+info: Ocelot.RateLimiting.Middleware.RateLimitingMiddleware[0]
+      requestId: 0HNPV8CD1I6IP:00000002, previousRequestId: No PreviousRequestId, message: 'EndpointRateLimiting is not enabled for /api/auth/{everything}'
+info: Ocelot.Authentication.Middleware.AuthenticationMiddleware[0]
+      requestId: 0HNPV8CD1I6IP:00000002, previousRequestId: No PreviousRequestId, message: 'No authentication needed for path '/api/auth/login'.'
+info: Ocelot.Authorization.Middleware.AuthorizationMiddleware[0]
+      requestId: 0HNPV8CD1I6IP:00000002, previousRequestId: No PreviousRequestId, message: '/api/auth/{everything} route does not require user to be authorized'
+info: Ocelot.Requester.Middleware.HttpRequesterMiddleware[0]
+      requestId: 0HNPV8CD1I6IP:00000002, previousRequestId: No PreviousRequestId, message: '200 (OK) status code of request URI: http://localhost:5001/api/auth/login.'

@@ -20,6 +20,17 @@ export class AuthService {
   readonly userRole   = computed(() => this._user()?.role ?? '');
   readonly fullName   = computed(() => this._user()?.fullName ?? '');
 
+  /** Role-specific landing page used by login, the brand link, and the root route. */
+  homePathForRole(role: string = this.userRole()): string {
+    switch (role) {
+      case 'Admin': return '/reports';
+      case 'Cashier': return '/pos';
+      case 'Stockkeeper': return '/inventory';
+      case 'Customer': return '/products';
+      default: return this.isLoggedIn() ? '/products' : '/login';
+    }
+  }
+
   constructor(private http: HttpClient, private router: Router) {}
 
   // ─── Đăng nhập ───────────────────────────────────────────────

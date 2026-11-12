@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CartService } from '../../../core/services/cart.service';
 
 @Component({
   selector: 'app-pos-checkout',
@@ -9,5 +10,13 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./pos-checkout.component.scss']
 })
 export class PosCheckoutComponent {
-  // Giao diện Mock POS Screen cho Thu ngân
+  constructor(readonly cart: CartService) {}
+
+  setQuantity(id: string, quantity: number): void { this.cart.setPosQuantity(id, quantity); }
+  remove(id: string): void { this.cart.removeFromPos(id); }
+  checkout(): void {
+    if (this.cart.posItems().length === 0) return;
+    window.alert('Đã ghi nhận thanh toán tiền mặt cho đơn hàng.');
+    this.cart.clearPos();
+  }
 }

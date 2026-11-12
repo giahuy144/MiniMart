@@ -31,3 +31,59 @@ info: Microsoft.EntityFrameworkCore.Database.Command[20101]
       LEFT JOIN `OrderDetails` AS `o0` ON `o1`.`Id` = `o0`.`OrderId`
       LEFT JOIN `Payments` AS `p` ON `o1`.`Id` = `p`.`OrderId`
       ORDER BY `o1`.`CreatedAt` DESC, `o1`.`Id`, `o0`.`Id`
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (3ms) [Parameters=[@__customerId_Value_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM `Orders` AS `o`
+      WHERE `o`.`CustomerId` = @__customerId_Value_0
+warn: Microsoft.EntityFrameworkCore.Query[20504]
+      Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'.
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (36ms) [Parameters=[@__customerId_Value_0='?' (DbType = Int32), @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT `o1`.`Id`, `o1`.`OrderNumber`, `o1`.`CustomerId`, `o1`.`CustomerName`, `o1`.`CustomerPhone`, `o1`.`CreatedBy`, `o1`.`SubTotal`, `o1`.`DiscountAmount`, `o1`.`TotalAmount`, `o1`.`PromotionCode`, `o1`.`Status`, `o1`.`PaymentStatus`, `o1`.`Notes`, `o1`.`CreatedAt`, `o0`.`Id`, `o0`.`ProductId`, `o0`.`Barcode`, `o0`.`ProductName`, `o0`.`UnitPrice`, `o0`.`Quantity`, `o0`.`UnitPrice` * CAST(`o0`.`Quantity` AS decimal(65,30)), `p`.`Id`, `p`.`PaymentMethod`, `p`.`Amount`, `p`.`TransactionReference`, `p`.`Status`, `p`.`PaymentTime`
+      FROM (
+          SELECT `o`.`Id`, `o`.`OrderNumber`, `o`.`CustomerId`, `o`.`CustomerName`, `o`.`CustomerPhone`, `o`.`CreatedBy`, `o`.`SubTotal`, `o`.`DiscountAmount`, `o`.`TotalAmount`, `o`.`PromotionCode`, `o`.`Status`, `o`.`PaymentStatus`, `o`.`Notes`, `o`.`CreatedAt`
+          FROM `Orders` AS `o`
+          WHERE `o`.`CustomerId` = @__customerId_Value_0
+          ORDER BY `o`.`CreatedAt` DESC
+          LIMIT @__p_2 OFFSET @__p_1
+      ) AS `o1`
+      LEFT JOIN `OrderDetails` AS `o0` ON `o1`.`Id` = `o0`.`OrderId`
+      LEFT JOIN `Payments` AS `p` ON `o1`.`Id` = `p`.`OrderId`
+      ORDER BY `o1`.`CreatedAt` DESC, `o1`.`Id`, `o0`.`Id`
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__customerId_Value_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM `Orders` AS `o`
+      WHERE `o`.`CustomerId` = @__customerId_Value_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (34ms) [Parameters=[@__customerId_Value_0='?' (DbType = Int32), @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT `o1`.`Id`, `o1`.`OrderNumber`, `o1`.`CustomerId`, `o1`.`CustomerName`, `o1`.`CustomerPhone`, `o1`.`CreatedBy`, `o1`.`SubTotal`, `o1`.`DiscountAmount`, `o1`.`TotalAmount`, `o1`.`PromotionCode`, `o1`.`Status`, `o1`.`PaymentStatus`, `o1`.`Notes`, `o1`.`CreatedAt`, `o0`.`Id`, `o0`.`ProductId`, `o0`.`Barcode`, `o0`.`ProductName`, `o0`.`UnitPrice`, `o0`.`Quantity`, `o0`.`UnitPrice` * CAST(`o0`.`Quantity` AS decimal(65,30)), `p`.`Id`, `p`.`PaymentMethod`, `p`.`Amount`, `p`.`TransactionReference`, `p`.`Status`, `p`.`PaymentTime`
+      FROM (
+          SELECT `o`.`Id`, `o`.`OrderNumber`, `o`.`CustomerId`, `o`.`CustomerName`, `o`.`CustomerPhone`, `o`.`CreatedBy`, `o`.`SubTotal`, `o`.`DiscountAmount`, `o`.`TotalAmount`, `o`.`PromotionCode`, `o`.`Status`, `o`.`PaymentStatus`, `o`.`Notes`, `o`.`CreatedAt`
+          FROM `Orders` AS `o`
+          WHERE `o`.`CustomerId` = @__customerId_Value_0
+          ORDER BY `o`.`CreatedAt` DESC
+          LIMIT @__p_2 OFFSET @__p_1
+      ) AS `o1`
+      LEFT JOIN `OrderDetails` AS `o0` ON `o1`.`Id` = `o0`.`OrderId`
+      LEFT JOIN `Payments` AS `p` ON `o1`.`Id` = `p`.`OrderId`
+      ORDER BY `o1`.`CreatedAt` DESC, `o1`.`Id`, `o0`.`Id`
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (0ms) [Parameters=[@__customerId_Value_0='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT COUNT(*)
+      FROM `Orders` AS `o`
+      WHERE `o`.`CustomerId` = @__customerId_Value_0
+info: Microsoft.EntityFrameworkCore.Database.Command[20101]
+      Executed DbCommand (45ms) [Parameters=[@__customerId_Value_0='?' (DbType = Int32), @__p_2='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='Text', CommandTimeout='30']
+      SELECT `o1`.`Id`, `o1`.`OrderNumber`, `o1`.`CustomerId`, `o1`.`CustomerName`, `o1`.`CustomerPhone`, `o1`.`CreatedBy`, `o1`.`SubTotal`, `o1`.`DiscountAmount`, `o1`.`TotalAmount`, `o1`.`PromotionCode`, `o1`.`Status`, `o1`.`PaymentStatus`, `o1`.`Notes`, `o1`.`CreatedAt`, `o0`.`Id`, `o0`.`ProductId`, `o0`.`Barcode`, `o0`.`ProductName`, `o0`.`UnitPrice`, `o0`.`Quantity`, `o0`.`UnitPrice` * CAST(`o0`.`Quantity` AS decimal(65,30)), `p`.`Id`, `p`.`PaymentMethod`, `p`.`Amount`, `p`.`TransactionReference`, `p`.`Status`, `p`.`PaymentTime`
+      FROM (
+          SELECT `o`.`Id`, `o`.`OrderNumber`, `o`.`CustomerId`, `o`.`CustomerName`, `o`.`CustomerPhone`, `o`.`CreatedBy`, `o`.`SubTotal`, `o`.`DiscountAmount`, `o`.`TotalAmount`, `o`.`PromotionCode`, `o`.`Status`, `o`.`PaymentStatus`, `o`.`Notes`, `o`.`CreatedAt`
+          FROM `Orders` AS `o`
+          WHERE `o`.`CustomerId` = @__customerId_Value_0
+          ORDER BY `o`.`CreatedAt` DESC
+          LIMIT @__p_2 OFFSET @__p_1
+      ) AS `o1`
+      LEFT JOIN `OrderDetails` AS `o0` ON `o1`.`Id` = `o0`.`OrderId`
+      LEFT JOIN `Payments` AS `p` ON `o1`.`Id` = `p`.`OrderId`
+      ORDER BY `o1`.`CreatedAt` DESC, `o1`.`Id`, `o0`.`Id`

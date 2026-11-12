@@ -1,28 +1,34 @@
 <div class="app-root">
   <header class="app-navbar">
-    <a class="brand" routerLink="/products"
+    <a class="brand" routerLink="/"
       ><span class="brand-mark">M</span><span>MiniMart</span></a
     >
     @if (auth.isLoggedIn()) {
       <nav>
-        <a routerLink="/products" routerLinkActive="active">Sản phẩm</a>
         @if (auth.userRole() === 'Customer') {
+          <a routerLink="/products" routerLinkActive="active">Sản phẩm</a>
+          <a routerLink="/orders" routerLinkActive="active">Đơn hàng</a>
           <a routerLink="/cart" routerLinkActive="active"
             >Giỏ hàng <b>{{ cart.itemCount() }}</b></a
           >
         }
-        @if (auth.userRole() === 'Admin' || auth.userRole() === 'Stockkeeper') {
-          <a routerLink="/inventory">Tồn kho</a>
-        }
         @if (auth.userRole() === 'Cashier') {
-          <a routerLink="/pos">Bán hàng tại quầy</a>
+          <a routerLink="/pos" routerLinkActive="active">Bán hàng tại quầy</a>
+          <a routerLink="/products" routerLinkActive="active">Tra cứu sản phẩm</a>
+        }
+        @if (auth.userRole() === 'Stockkeeper') {
+          <a routerLink="/inventory" routerLinkActive="active">Tồn kho</a>
+          <a routerLink="/inventory#stock-intake">Nhập hàng</a>
         }
         @if (auth.userRole() === 'Admin') {
-          <a routerLink="/reports">Báo cáo</a>
+          <a routerLink="/products" routerLinkActive="active">Sản phẩm</a>
+          <a routerLink="/pos" routerLinkActive="active">Bán hàng</a>
+          <a routerLink="/inventory" routerLinkActive="active">Tồn kho</a>
+          <a routerLink="/reports" routerLinkActive="active">Báo cáo</a>
         }
       </nav>
       <div class="account">
-        <span>{{ auth.fullName() }}</span
+        <span>{{ auth.fullName() }} · {{ roleLabel() }}</span
         ><button (click)="auth.logout()">Đăng xuất</button>
       </div>
     } @else {

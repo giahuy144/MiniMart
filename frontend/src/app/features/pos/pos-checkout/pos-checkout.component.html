@@ -22,38 +22,24 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>1</td>
-            <td class="font-mono">8934567890123</td>
-            <td class="product-name">Sữa tươi tiệt trùng Vinamilk 100% 1L</td>
-            <td>Hộp</td>
-            <td class="text-center">
-              <div class="qty-control">
-                <button class="btn-qty">-</button>
-                <span class="qty-val">2</span>
-                <button class="btn-qty">+</button>
-              </div>
-            </td>
-            <td class="text-right font-mono">20.000₫</td>
-            <td class="text-right font-mono font-bold text-emerald">40.000₫</td>
-            <td class="text-center"><button class="btn-del">✕</button></td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td class="font-mono">8934822001192</td>
-            <td class="product-name">Mì gói Hảo Hảo tôm chua cay</td>
-            <td>Gói</td>
-            <td class="text-center">
-              <div class="qty-control">
-                <button class="btn-qty">-</button>
-                <span class="qty-val">5</span>
-                <button class="btn-qty">+</button>
-              </div>
-            </td>
-            <td class="text-right font-mono">4.500₫</td>
-            <td class="text-right font-mono font-bold text-emerald">22.500₫</td>
-            <td class="text-center"><button class="btn-del">✕</button></td>
-          </tr>
+          @for (item of cart.posItems(); track item.id; let i = $index) {
+            <tr>
+              <td>{{ i + 1 }}</td>
+              <td class="font-mono">{{ item.id }}</td>
+              <td class="product-name">{{ item.name }}</td>
+              <td>{{ item.unit }}</td>
+              <td class="text-center"><div class="qty-control">
+                <button class="btn-qty" type="button" (click)="setQuantity(item.id, item.quantity - 1)">−</button>
+                <span class="qty-val">{{ item.quantity }}</span>
+                <button class="btn-qty" type="button" (click)="setQuantity(item.id, item.quantity + 1)">+</button>
+              </div></td>
+              <td class="text-right font-mono">{{ item.price | currency:'VND':'symbol':'1.0-0':'vi-VN' }}</td>
+              <td class="text-right font-mono font-bold text-emerald">{{ item.price * item.quantity | currency:'VND':'symbol':'1.0-0':'vi-VN' }}</td>
+              <td class="text-center"><button class="btn-del" type="button" (click)="remove(item.id)">×</button></td>
+            </tr>
+          } @empty {
+            <tr><td colspan="8" class="pos-empty">Đơn hàng chưa có sản phẩm. Mở “Tra cứu sản phẩm” để thêm hàng.</td></tr>
+          }
         </tbody>
       </table>
     </div>
@@ -95,29 +81,28 @@
 
     <div class="calc-section">
       <div class="calc-row">
-        <span>Tổng tiền hàng (7 món)</span>
-        <span class="font-mono">62.500₫</span>
+        <span>Tổng tiền hàng ({{ cart.posItemCount() }} món)</span>
+        <span class="font-mono">{{ cart.posSubtotal() | currency:'VND':'symbol':'1.0-0':'vi-VN' }}</span>
       </div>
       <div class="calc-row text-orange">
         <span>Chiết khấu khuyến mãi</span>
-        <span class="font-mono">-5.125₫</span>
+        <span class="font-mono">0₫</span>
       </div>
       <div class="calc-row text-emerald">
         <span>Điểm tích lũy cộng dồn</span>
-        <span class="font-mono">+57 điểm</span>
+        <span class="font-mono">+{{ (cart.posSubtotal() / 10000) | number:'1.0-0' }} điểm</span>
       </div>
 
       <div class="grand-total-box">
         <span class="total-label">KHÁCH CẦN THANH TOÁN</span>
-        <span class="total-value font-mono">57.375₫</span>
+        <span class="total-value font-mono">{{ cart.posSubtotal() | currency:'VND':'symbol':'1.0-0':'vi-VN' }}</span>
       </div>
 
       <div class="payment-method-selector">
         <button class="pay-btn active">💵 Tiền mặt</button>
-        <button class="pay-btn">📱 Quét QR Chuyển khoản</button>
       </div>
 
-      <button class="btn-checkout">F9 - XÁC NHẬN THANH TOÁN & IN HÓA ĐƠN</button>
+      <button class="btn-checkout" type="button" [disabled]="cart.posItems().length === 0" (click)="checkout()">F9 - XÁC NHẬN THANH TOÁN & IN HÓA ĐƠN</button>
     </div>
   </aside>
 </div>
